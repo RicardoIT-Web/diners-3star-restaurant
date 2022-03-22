@@ -1,0 +1,211 @@
+body {
+    font-family: Arial;
+    margin: 0 auto;
+}
+
+/* Top navbar styling */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 9rem;
+}
+
+li {
+    display: inline-block;
+}
+
+/* offcanvas styling */
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+.nav-link i {
+    font-size: 25px;
+    padding-top: 15px;
+    width: 55px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+    font-size: 25px;
+    padding-top: 15px;
+    width: 55px;   
+}
+
+.fa-twitter {
+    color: #00acee;
+    font-size: 25px;
+    padding-top: 15px;
+    width: 55px;   
+}
+
+.fa-instagram {
+    font-size: 25px;
+    padding-top: 15px;
+    width: 55px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 35%, #d6249f 45%, #285AEB 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+/* Hero images */
+.img-fluid {
+    width: 100%;
+    height: 96vh;
+}
+
+/* footer styling */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-container div {
+    width: 200px;
+}
+
+i.fas.fa-copyright {
+    display: flex;
+    align-items: baseline;
+    padding-left: 15px;
+}
+
+h5 {
+    padding-left: 10px;
+}
+
+#right a {
+    color: black;
+    padding-right: 10px;
+}
+
+.fa-linkedin:hover {
+    cursor: pointer;
+    color: #0e76a8;
+}
+
+/* register page styling */
+.d-flex {
+    background: #abab9c75;
+}
+
+.card-container {
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.card {
+    display: inline-block;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+
+img.card-img-top {
+    height: 190px;
+}
+
+a.btn-primary {
+    background-color: #abab9c;
+    color: black;
+    border-color: none;
+}
+
+/* signin fields */
+.register-container {
+    padding-top: 25px;
+    margin-left: 40%;
+}
+
+#id_username {
+    margin-left: 50px;
+}
+
+#id_email {
+    margin-left: 8px;
+}
+
+#id_password1 {
+    margin-left: 54px;
+}
+
+#id_password2 {
+    margin-left: 0;
+}
+
+form button {
+    margin-left: 129px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #abab9c;
+    color: black;
+}
+
+form button:hover {
+    background-color: rgb(95, 95, 236);
+    color: white;
+}
+
+/* Login page styling */
+.login-container {
+    text-align: center;
+    padding-top: 150px;
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1646155212/pexels-nicole-michalou-5775055_oysjpu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 91vh;
+}
+
+.login {
+    background-color: white;
+    opacity: 0.9;
+    width: 30%;
+    margin-left: 35%;
+    padding: 20px;
+}
+
+button.primaryAction {
+    margin-left: 60px;
+}
+
+button.btn-clear {
+    margin-left: 20px;
+}
+
+#id_password {
+    margin-left: 3px;
+}
+
+/* contacts page */
+.gmap_canvas {
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 150px;
+    position: fixed;
+}
+
+
+/* menu page styling */
+
