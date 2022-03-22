@@ -5,6 +5,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Available"), (1, "Unavailable"))
 
+
 class Table(models.Model):
     """
     All tables deemed to be single table seating 2 people each.

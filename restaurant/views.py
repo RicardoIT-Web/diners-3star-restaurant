@@ -4,7 +4,7 @@ from .models import Booking
 
 
 class Home(View):
-    
+
     def get(self, request):
         return render(request, 'index.html')
 
@@ -17,6 +17,5 @@ class Menu(View):
 
 class BookingList(generic.View):
     model = Booking
-    queryset = Booking.objects.filter(status=0)
     template_name = 'bookings.html'
     paginate_by = 3

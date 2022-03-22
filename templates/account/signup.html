@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<!-- cards container -->
+<div class="card-container">
+  <div class="card" style="width: 18rem;">
+    <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1646949515/chef_in_kitchen_ngwauk.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Meet Our Kitchen Staff</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1646950287/chef_in_kitchen_gpwhoc.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Taste Before You Order</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1646950609/chef_with_customers_vminut.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Speak To Our Chef</p>
+    </div>
+  </div>
+</div>
+<div class="register-container">
+
+  <p>{% blocktrans %}Already have an account? Please <a href="{{ login_url }}">Login</a>.{% endblocktrans %}</p>
+
+  <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <button type="submit">{% trans "Register" %} &raquo;</button>
+  </form>
+</div>
+{% endblock %}
