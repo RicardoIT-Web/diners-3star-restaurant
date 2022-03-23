@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+<div class="booking-container">
+    <h2>Book a table</h2>
+    <form class="bookingform" method="post" action="add" style="margin-top: 1em">
+        {{ booking_form | crispy }}
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="booking-btn"   type="submit">Book Table</button>
+    </form>
+</div>
+
+{% endblock %}

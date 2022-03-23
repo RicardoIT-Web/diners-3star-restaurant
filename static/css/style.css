@@ -209,3 +209,25 @@ button.btn-clear {
 
 /* menu page styling */
 
+/* booking page styling */
+.booking-container {
+    text-align: left;
+    color: white;
+    padding-top: 150px;
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1646152267/beach_view_3_xehszm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bookingform {
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+main h2 {
+    margin-top: .5em;
+    text-align: center;
+}
