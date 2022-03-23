@@ -4,14 +4,16 @@
 {% load crispy_forms_tags %}
 
 
-<div class="booking-container">
-    <h2>Book a table</h2>
-    <form class="bookingform" method="post" action="add" style="margin-top: 1em">
-        {{ booking_form | crispy }}
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="booking-btn"   type="submit">Book Table</button>
-    </form>
-</div>
-
+<main class="bookingpg-img">
+    <div class="booking-container">
+        <h2>Book a table</h2>
+        <form class="bookingform" method="post" action="add">
+            {{ booking_form | crispy }}
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="booking-btn" type="submit">Book Table</button>
+            <button class="btn-clear" type="reset">Clear Form</button>
+        </form>
+    </div>
+</main>
 {% endblock %}

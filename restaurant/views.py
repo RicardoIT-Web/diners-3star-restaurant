@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 from .models import Booking
 from .forms import BookingForm
 
@@ -23,6 +24,29 @@ class BookingFormView(View):
             'booking_form': BookingForm
         }
         return render(request, 'bookingform.html', context)
+
+
+    def post(self, request):
+        context = {
+            'booking_form': BookingForm
+        }
+
+        booking_form = BookingForm(data=request.POST)
+        if booking_form.is_valid():
+            booking_form.instance.email = request.user.email
+            booking_form.instance.name = request.user.username
+            booking = booking_form.save()
+            booking.save()
+        else:
+            booking_form = BookingForm
+        return render, HttpResponseRedirect(
+            request, 'home.html'
+            'bookingform.html',
+            context,
+            {
+                'booking': True,
+            },
+        )
 
 
 class BookingList(generic.View):

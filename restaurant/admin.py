@@ -7,8 +7,8 @@ from .models import Booking, Table
 @admin.register(Booking)
 class BookingAdmin(SummernoteModelAdmin):
 
-    list_display = ('user', 'table', 'group_size', 'date', 'start_time', 'end_time', 'created_on')
-    search_fields = ('User', 'date', 'table', 'group_size', 'start_time')
+    list_display = ('user', 'table', 'group_size', 'date', 'start_time', 'end_time', 'comment', 'created_on', 'approved')
+    search_fields = ('user', 'date', 'table', 'group_size', 'start_time')
     list_filter = ('table', 'approved', 'created_on')
     summernote_fields = ('comment')
     actions = ['approved_bookings']
