@@ -21,38 +21,31 @@ class BookingFormView(View):
 
     def get(self, request):
         context = {
-            'booking_form': BookingForm
+            'booking_form': BookingForm()
         }
         return render(request, 'bookingform.html', context)
 
-
     def post(self, request):
-        context = {
-            'booking_form': BookingForm
-        }
+        # context = {
+        #     'booking_form': BookingForm()
+        # }
 
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
-            booking_form.instance.email = request.user.email
-            booking_form.instance.name = request.user.username
-            booking = booking_form.save()
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            print(booking)
+
             booking.save()
         else:
-            booking_form = BookingForm
-        return render, HttpResponseRedirect(
-            request, 'home.html'
-            'bookingform.html',
-            context,
-            {
-                'booking': True,
-            },
-        )
+            print('Form not valid')
+            print(booking_form)
+
+        return render(
+            request, 'index.html',)
 
 
 class BookingList(generic.View):
     model = Booking
     template_name = 'adminbookings.html'
     paginate_by = 3
-
-
-

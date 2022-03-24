@@ -1,16 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% load crispy_forms_tags %}
 
 
 <main class="bookingpg-img">
     <div class="booking-container">
         <h2>Book a table</h2>
-        <form class="bookingform" method="post" action="add">
-            {{ booking_form | crispy }}
+        <form class="bookingform" method="POST">
             {% csrf_token %}
-            {{ form.as_p }}
+            {{ booking_form.table | as_crispy_field }}
+            {{ booking_form.group_size | as_crispy_field }}
+            {{ booking_form.date | as_crispy_field }}
+            {{ booking_form.start_time | as_crispy_field }}
+            {{ booking_form.end_time | as_crispy_field }}
+            {{ booking_form.comment | as_crispy_field }}
+
             <button class="booking-btn" type="submit">Book Table</button>
             <button class="btn-clear" type="reset">Clear Form</button>
         </form>

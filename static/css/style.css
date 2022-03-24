@@ -170,7 +170,7 @@ form button:hover {
     text-align: center;
     padding-top: 150px;
     position: fixed;
-    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1646155212/pexels-nicole-michalou-5775055_oysjpu.jpg");
+    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648135876/login_background_img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,7 +211,7 @@ button.btn-clear {
 
 /* booking page styling */
 .bookingpg-img {
-    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648056326/bookingformimg3_ujiop0.jpg");
+    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648136151/beachbreakfast6_aqprxa.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
