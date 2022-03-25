@@ -31,7 +31,7 @@ class Booking(models.Model):
     date = models.DateField(blank=True)
     start_time = models.TimeField(auto_now_add=False, blank=True)
     end_time = models.TimeField(auto_now_add=False, blank=True)
-    comment = models.TextField()
+    comment = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
