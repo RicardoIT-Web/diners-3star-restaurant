@@ -14,49 +14,6 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [Wireframes](#wireframes)
 + [Agile Methodology](#Agile-Methodology)
 
-<!-- [Existing Features](#existing-features)
-+ [Navbar and Footer](#Navbar-and-Footer)
-+ [Home Page](#home-page)
-+ [Date Picker](#Date-Picker)
-+ [Form validation](#Form-validation)
-
-[Future Features](#future-features)
-+ [](#)
-
-[Technologies Used](#technologies-used)
-+ [Languages Used](#languages-used)
-+ [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
-
-[Code Validation](#code-validation)
-+ [HTML beautify](#HTML-beautify)
-+ [HTML valiation](#HTML-valiation)
-+ [CSS validation](#CSS-validation)
-+ [JavaScript validation](#JavaScript-validation)
-+ [Python validator](#Python-validator)
-
-[Tests](#tests)
-+ [Automated Tests](#automated-tests)
-+ [Lighthouse](#Lighthouse)
-+ [Manual tests](#Manual-tests)
-
-[Project Bugs and Solutions](#project-bugs-and-solutions)
-+ [Static files not loading](#static-files-not-loading)
-+ [Hero image styling](#hero-image-styling)
-+ [Navbar Current Link](#navbar-current-link)
-+ [Bugs left](#Bugs-left)
-
-
-[Deployment and making a clone](#Deployment)
-+ [Deployment to heroku](#Deployment-to-heroku)
-+ [Setting up your local enviroment](#Setting-up-your-local-enviroment)
-
-
-[Credits](#credits)
-+ [Online resources](#Online-resources)
-+ [Tutorials and inspiration](#Tutorials-and-inspiration)
-+ [People](#People)
- -->
-
 
 ## UX
 ------
