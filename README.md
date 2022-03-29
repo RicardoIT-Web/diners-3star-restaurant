@@ -14,7 +14,6 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [Wireframes](#wireframes)
 + [Agile Methodology](#Agile-Methodology)
 
-
 ## UX
 ------
 
