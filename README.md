@@ -14,14 +14,14 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [Wireframes](#wireframes)
 + [Agile Methodology](#Agile-Methodology)
 
-[Existing Features](#existing-features)
+<!-- [Existing Features](#existing-features)
 + [Navbar and Footer](#Navbar-and-Footer)
 + [Home Page](#home-page)
 + [Date Picker](#Date-Picker)
 + [Form validation](#Form-validation)
 
 [Future Features](#future-features)
-+ [SMS communication app](#SMS-communication-app)
++ [](#)
 
 [Technologies Used](#technologies-used)
 + [Languages Used](#languages-used)
@@ -32,7 +32,6 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [HTML valiation](#HTML-valiation)
 + [CSS validation](#CSS-validation)
 + [JavaScript validation](#JavaScript-validation)
-+ [Python beautify](#Python-beautify)
 + [Python validator](#Python-validator)
 
 [Tests](#tests)
@@ -41,12 +40,9 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [Manual tests](#Manual-tests)
 
 [Project Bugs and Solutions](#project-bugs-and-solutions)
-+ [Link to Google Maps](#link-to-google-maps)
 + [Static files not loading](#static-files-not-loading)
-+ [Styling map template](#styling-map-template)
 + [Hero image styling](#hero-image-styling)
 + [Navbar Current Link](#navbar-current-link)
-+ [Form Fields Styling](#form-fields-styling)
 + [Bugs left](#Bugs-left)
 
 
@@ -59,7 +55,7 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [Online resources](#Online-resources)
 + [Tutorials and inspiration](#Tutorials-and-inspiration)
 + [People](#People)
-
+ -->
 
 
 ## UX
@@ -119,5 +115,3 @@ The new design includes only one pair of start and destination address. After ty
 Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](). The issues are currently in two categories - done or for the next relese. 
 
 The issues were than closed automaticaly when the pull request was linked to the issue. 
-
-
