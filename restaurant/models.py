@@ -33,7 +33,7 @@ class Booking(models.Model):
     end_time = models.TimeField(auto_now_add=False, blank=True)
     comment = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
 
     def __str__(self):
         return f'{self.table}. Booked by {self.user} for {self.group_size} people, for the {self.date} at {self.start_time}.'

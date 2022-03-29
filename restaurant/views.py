@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from restaurant import utils
 from .models import Booking, Table
 from .forms import BookingForm
+
 
 
 class Home(View):
@@ -31,17 +33,17 @@ class BookingFormView(View):
         print(booking_form)
         if booking_form.is_valid():
             # forms valid - need to check availability
-            # if ....
+            # if BookingForm.table
+
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-    
-    def double_booking(self, table, date, start_time, end_time):
-        double_booking = BookingForm.objects.all()
-        if double_booking == BookingForm(table, date, start_time, end_time):
-            raise BookingForm.ValidationError(f'{table} is already booked. Please select another.')
-        return HttpResponseRedirect('bookingform.html')
 
+    # def double_booking(self, table, date, start_time, end_time):
+    #     double_booking = BookingForm.objects.all()
+    #     if double_booking == BookingForm(table, date, start_time, end_time):
+    #         raise BookingForm.ValidationError(f'{table} is already booked. Please select another.')
+    #     return HttpResponseRedirect('bookingform.html')
 
         return render(request, 'index.html',)
 
