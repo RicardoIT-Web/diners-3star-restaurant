@@ -30,14 +30,14 @@ In order to demonstrate an Agile approach to this project, GitHub issues were us
 
 #### User stories - Admin features
 
-The following user stories were satisfied by creation of the Restaurant app, which including these features:
-- adding and removing a table from the usual layout, enabling for flexibility in the day to day management depending on customer demands.
+The following user stories were satisfied by creation of the Restaurant app, which include these features:
+
+- go to the registration page and log in as an admin in order to make a booking on behalf of a customer.
 - manually adding a booking to the system on behalf of a customer if customers book via a phone call, email or via the contact form.
-- View User contact details
-- approving pending bookings created by admin and/or User.
+- approving/rejecting pending bookings created by admin and/or User.
+- View User contact details.
 - making changes to the Menu as and when required.
-
-
+- adding and removing a table from the usual layout, enabling for flexibility in the day to day management depending on customer demands.
 
 [User Story #1](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/1) As a administrator I can click on the navbar and select "login" so that I can make a booking on behalf of a customer.
 
@@ -49,6 +49,11 @@ The following user stories were satisfied by creation of the Restaurant app, whi
 
 [User Story #11](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/11) As a administrator I can manage the table layouts so that I can have flexibility with moving tables around to meet demand.
 
+#### User stories - User features
+
+The following user stories were satisfied by downloading the Django Allauth application which provides the project with built in tools to manage authentication, registration and account management:
+
+- 
 
 ### Wireframes 
 However I have designed both desktop and mobile wireframes in the same time, but I have taken mobile first approach. This is an app for drivers and it has to look good and work well on a small mobile. 
