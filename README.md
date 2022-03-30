@@ -30,20 +30,14 @@ In order to demonstrate an Agile approach to this project, GitHub issues were us
 
 #### User stories - Admin features
 
-The following user stories were satisfied by creation of the Restaurant app, which include these features:
+The following user stories were satisfied by the creation of the Restaurant app, which include these features:
 
-- go to the registration page and log in as an admin in order to make a booking on behalf of a customer.
-- manually adding a booking to the system on behalf of a customer if customers book via a phone call, email or via the contact form.
-- approving/rejecting pending bookings created by admin and/or User.
-- View User contact details.
-- making changes to the Menu as and when required.
-- adding and removing a table from the usual layout, enabling for flexibility in the day to day management depending on customer demands.
 
 [User Story #1](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/1) As a administrator I can click on the navbar and select "login" so that I can make a booking on behalf of a customer.
 
 [User Story #2](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/2) As a administrator I can view pending customer bookings so that I can approve or reject reservation requests.
 
-[User Story #3](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/3) As a Admin I can View User Contact details so that I can reach out to them regarding their booking requests.
+[User Story #3](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/3) As a Admin I can view User Contact details so that I can reach out to them regarding their booking requests.
 
 [User Story #4](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/4) As a Admin I can access the menu section so that I can remove existing menu and replace with new menu.
 
@@ -53,7 +47,16 @@ The following user stories were satisfied by creation of the Restaurant app, whi
 
 The following user stories were satisfied by downloading the Django Allauth application which provides the project with built in tools to manage authentication, registration and account management:
 
-- 
+[User Story #5](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/7) As a User I can click on Menu in the navbar so that I can view the days specials.
+
+[User Story #7](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/7) As a User I can click on navbar and select "register" so that I can create a personal account.
+
+[User Story #8](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/8) As a User I can login by inserting my email and password so that I can create a booking.
+
+[User Story #9](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/9) As a User I can go to the navbar and select login so that I can book a table.
+
+[User Story #10](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/10) As an authenticated User I can click on the navbar and select "Bookings" so that I can book a table.
+
 
 ### Wireframes 
 However I have designed both desktop and mobile wireframes in the same time, but I have taken mobile first approach. This is an app for drivers and it has to look good and work well on a small mobile. 
