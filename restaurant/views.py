@@ -6,7 +6,6 @@ from .models import Booking, Table
 from .forms import BookingForm
 
 
-
 class Home(View):
 
     def get(self, request):
