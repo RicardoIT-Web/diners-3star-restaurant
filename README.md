@@ -107,9 +107,36 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
 ## The Restaurant app
 
-This project is built using Django, adopting the MVT methodology. The restaurant app which contains the MVT(Models-Views-Templates) structure to make this site an interactive has two main models:
+This project is built using Django, adopting the MVT (Models-Views-Templates) methodology. The restaurant app which contains the MVT structure to make this site an interactive has two main models:
 
-    * The Table Model
-    * The Booking Model
+* The Table Model
+
+The Table model is created to provide the restaurant with a more flexible approach of managing tables pending customer demand. As an example, in the winter months the outside tables might be moved indoors as the demand for outdoor space might be reduced or eliminated. This model provides an administrator with the functionality to be able to do just that.
+
+![The Table Model](/media/images/table_management_admin_img.jpg)
 
 
+* The Booking Model
+
+The booking model allows bothe the site administrator and the User to make a booking. The booking form requires that a table is selected, the number of guests attending, the date of the reservation, a start time and an end time. The form also contains a comments section to allow both the admin and the User to provide any comments such as any dietry restriction or perhaps raise any questions.
+
+#### Admin view
+![The Booking Model](/media/images/admin_booking_form.jpg)
+
+#### User view
+![The Booking Model](/media/images/user_booking_form.jpg)
+
+
+## Other Features
+
+There are of course other features on this site that would be expected. The site contains an offcanvas navigation panel porvided with the assistance of Bootstrap5, which holds repeated links as seen on the top navbar of the main page, but also contains links to the following items:
+
+![Offcanvas Navbar](/media/images/offcanvas_navbar_img.jpg)
+
+* The Menu page
+* The Contacts Page
+* The Booking page
+* The Social Media accounts
+
+#### The Menu Page
+The Menu page will satisfy User Story 5, as referenced in the User stories section above. The User is able to click on the link and is diverted to the Menu page which is an image of a fixed Menu which does not change. 
