@@ -1,6 +1,6 @@
 # Diners 3Star Restaurant
 
-[![responsive](***)](https://diners-3star-restaurant.herokuapp.com/)
+<!-- [![responsive](***)](https://diners-3star-restaurant.herokuapp.com/) -->
 
 Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed site.  
 
@@ -20,7 +20,7 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 
 ## Purpose
 
-This project was developed to satisfy my fourth Mileston Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each and 2 hall tables each sitting a maximum of 6 people on each table.
+This project was developed to satisfy my fourth Milestone Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each and 2 hall tables each sitting a maximum of 6 people on each table.
 
 The restaurant prides itself in providing their customers with a more inclusive experience by allowing customers to visit the kitchen area, speak to the chef and their team and be able to have a little taste of any Menu meal before ordering.
 
@@ -28,20 +28,23 @@ The restaurant prides itself in providing their customers with a more inclusive 
 
 ## Project Scoping
 
-Using the Design Thinking approach to this project, some prework was carried out to bring the ideas and functionality of the project to "paper". Powerpoint slides are used to illustrate this process beggining with a problem statement  
+Using the Design Thinking approach to this project, some prework was carried out to bring the ideas and functionality of the project to "paper". Powerpoint slides are used to illustrate this process beggining with a problem statement
 Entity Relationship diagram
+
+The raw data can be downloaded from [here]().
+
 
 
 ## User Stories
-
+----
 In order to demonstrate an Agile approach to this project, GitHub issues were used as a Kanban board to record the user stories. The user stories were categorised into different User functions between the Admin and the User and would be progressed from the "to-do" board to the "done" board as the project progressed.
 
 The Project Kanban board.
 
-![Kanban Board](/media/agile_methodology/agile_kanban_img.jpg)
+![Kanban Board](/media/images/agile_kanban_img.jpg)
 
 ### User stories - Admin features
-
+----
 The following user stories were satisfied by the creation of the Restaurant app, which include these features:
 
 
@@ -56,7 +59,7 @@ The following user stories were satisfied by the creation of the Restaurant app,
 [User Story #11](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/11) As a administrator I can manage the table layouts so that I can have flexibility with moving tables around to meet demand.
 
 ### User stories - User features
-
+----
 The following user stories were satisfied by downloading the Django Allauth application which provides the project with built in tools to manage authentication, registration and account management:
 
 [User Story #5](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/5) As a User I can click on Menu in the navbar so that I can view the days specials.
@@ -74,19 +77,16 @@ The following user stories were satisfied by downloading the Django Allauth appl
 ----
 
 ### Wireframes 
-This project is created using Bootstrap and Django frameworks. The built in tools for these frameworks already assist with site responsiveness, as a result, a Desktop approach first was adopted in the hope that adjustments would be minor at the end of the projects full creation.
+This project is created using Bootstrap and Django frameworks. The built in tools for these frameworks already assist with site responsiveness, as a result, a Desktop approach first was adopted with the aim that adjustments would be minor at the end of the projects full creation.
 
 Wireframes are created created using [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB). 
-The project was developed from initial wireframes and some modifications were made during the development process to assure better usability. 
+The project was developed from initial wireframes and some modifications were made during the development process to ensure better UX. 
 
 [Wireframes initial project]()
 Initial design was focused on monthly reporting. I decided to change this do daily reporting and put monthly reporting on the list for the next relese.
 
 The design included a long form for user to type addresses in, one after another. This idea was dropped, as it could run into a danger of loosing the data half way through the journey. I thought it is important that user saves data immediately after he types it in. 
 
-[Wireframes final version]()
-
-The new design includes only one pair of start and destination address. After typing them in, the user saves them and can continue typing next address. In the new design uer can look up a day report that gives him a list of his visits for the day. 
 
 ### Agile Methodology
 
