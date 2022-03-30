@@ -10,25 +10,37 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 
 [UX](#ux)
 + [Purpose of the site](#purpose)
++ [Project Scoping](#project-scoping)
 + [User Stories](#user-stories)
 + [Wireframes](#wireframes)
 + [Agile Methodology](#Agile-Methodology)
 
-## UX
+# UX
 ------
 
-### Purpose
+## Purpose
 
-This project was developed to satisfy my fourth Mileston Project to for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each and 2 hall tables each sitting a maximum of 6 people on each table.
+This project was developed to satisfy my fourth Mileston Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each and 2 hall tables each sitting a maximum of 6 people on each table.
 
 The restaurant prides itself in providing their customers with a more inclusive experience by allowing customers to visit the kitchen area, speak to the chef and their team and be able to have a little taste of any Menu meal before ordering.
 
 ------
-### User Stories
 
-In order to demonstrate an Agile approach to this project, GitHub issues were used to record the user stories. The user stories were categorised into different User functions between the Admin and the User.
+## Project Scoping
 
-#### User stories - Admin features
+Using the Design Thinking approach to this project, some prework was carried out to bring the ideas and functionality of the project to "paper". Powerpoint slides are used to illustrate this process beggining with a problem statement  
+Entity Relationship diagram
+
+
+## User Stories
+
+In order to demonstrate an Agile approach to this project, GitHub issues were used as a Kanban board to record the user stories. The user stories were categorised into different User functions between the Admin and the User and would be progressed from the "to-do" board to the "done" board as the project progressed.
+
+The Project Kanban board.
+
+![Kanban Board](/media/agile_methodology/agile_kanban_img.jpg)
+
+### User stories - Admin features
 
 The following user stories were satisfied by the creation of the Restaurant app, which include these features:
 
@@ -37,17 +49,19 @@ The following user stories were satisfied by the creation of the Restaurant app,
 
 [User Story #2](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/2) As a administrator I can view pending customer bookings so that I can approve or reject reservation requests.
 
-[User Story #3](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/3) As a Admin I can view User Contact details so that I can reach out to them regarding their booking requests.
+[User Story #3](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/3) As a administrator I can view User Contact details so that I can reach out to them regarding their booking requests.
 
-[User Story #4](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/4) As a Admin I can access the menu section so that I can remove existing menu and replace with new menu.
+[User Story #4](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/4) As a administrator I can access the menu section so that I can remove existing menu and replace with new menu.
 
 [User Story #11](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/11) As a administrator I can manage the table layouts so that I can have flexibility with moving tables around to meet demand.
 
-#### User stories - User features
+### User stories - User features
 
 The following user stories were satisfied by downloading the Django Allauth application which provides the project with built in tools to manage authentication, registration and account management:
 
-[User Story #5](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/7) As a User I can click on Menu in the navbar so that I can view the days specials.
+[User Story #5](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/5) As a User I can click on Menu in the navbar so that I can view the days specials.
+
+[User Story #6](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/6) As a User I can Click on navbar and select "contacts" so that I can view the restaurants contact details.
 
 [User Story #7](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/7) As a User I can click on navbar and select "register" so that I can create a personal account.
 
@@ -57,11 +71,13 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
 [User Story #10](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/10) As an authenticated User I can click on the navbar and select "Bookings" so that I can book a table.
 
+----
 
 ### Wireframes 
-However I have designed both desktop and mobile wireframes in the same time, but I have taken mobile first approach. This is an app for drivers and it has to look good and work well on a small mobile. 
+This project is created using Bootstrap and Django frameworks. The built in tools for these frameworks already assist with site responsiveness, as a result, a Desktop approach first was adopted in the hope that adjustments would be minor at the end of the projects full creation.
 
-Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB). The project was developed from initial wireframes and some modifications were made during the development process to assure better usability. 
+Wireframes are created created using [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB). 
+The project was developed from initial wireframes and some modifications were made during the development process to assure better usability. 
 
 [Wireframes initial project]()
 Initial design was focused on monthly reporting. I decided to change this do daily reporting and put monthly reporting on the list for the next relese.
