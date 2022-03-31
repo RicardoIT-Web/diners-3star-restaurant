@@ -208,8 +208,13 @@ button.btn-clear {
 
 
 /* menu page styling */
-.wrapper {
-    position: absolute;
+.menu_img img {
+    padding-top: 68px;
+    padding-left: 33%;
+    height: 91vh;
+}
+/* .menu_wrapper {
+    position: relative;
     top: 100%;
     left: 50%;
     width: 400px;
@@ -237,12 +242,12 @@ menu p {
   
   @keyframes credits {
     0% {
-      top: 100%;
+      top: 80%;
     }
     100% {
-      top: -500%;
+      top: -300%;
     }
-  }
+  } */
 
 /* .menu {
     background-position: center;
