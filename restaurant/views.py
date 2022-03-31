@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from restaurant import utils
 from .models import Booking, Table
-from .forms import BookingForm
+from .forms import BookingForm, ContactForm
 
 
 class Home(View):
@@ -29,7 +29,6 @@ class BookingFormView(View):
     def post(self, request):
 
         booking_form = BookingForm(data=request.POST)
-        print(booking_form)
         if booking_form.is_valid():
             # forms valid - need to check availability
             # if BookingForm.table
@@ -47,7 +46,20 @@ class BookingFormView(View):
         return render(request, 'index.html',)
 
 
-class BookingList(generic.View):
-    model = Booking
-    template_name = 'adminbookings.html'
-    paginate_by = 3
+class ContactFormView(View):
+
+    def get(self, request):
+        context = {
+            'contact_form': ContactForm()
+        }
+        return render(request, 'contacts.html', context)
+
+    def post(self, request):
+
+        contact_form = ContactForm(data=request.POST)
+        if contact_form.is_valid():
+            contact = contact_form.save(commit=False)
+            contact.save()
+
+        return render(request, 'index.html',)
+

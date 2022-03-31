@@ -209,70 +209,39 @@ button.btn-clear {
 
 /* menu page styling */
 .menu_container {
-    text-align: center;
+    margin: 0;
 }
-
-.img_left img {
-    display: flex;
+.column {
     float: left;
-    opacity: 0.5;
-    padding-top: 70px;
-    padding-left: 260px;
-    height: 91vh;
+    width: 25%;
 }
 
-.img_right img {
-    float: right;
-    padding-top: 70px;
-    padding-right: 200px;
-    height: 91vh;
-}
-
-/* .container {
-    position: absolute;
-    top: 100%;
-    left: 65%;
-    width: 300px;
-    margin-left: -200px;
-    font: 300 30px/1 'Open Sans Condensed', sans-serif;
+.column img {
     text-align: center;
-    color: rgb(143, 37, 37);
-    animation: 50s credits infinite ease-in-out;
-    animation-delay: 1s;
-    loopIn
+    display: block;
+    float: left;
+    padding-top: 70px;
+    padding-left: 20px;
+    height: 91vh;
 }
 
-.container:hover {
-    animation-play-state: paused;
+.column.left {
+    opacity: 0.5;
+    margin-left: 50px;
 }
 
-.menu h2 {
-    margin-bottom: 30px;
-    font-size: 50px;
+.column.center {
+    margin-left: 100px;
 }
 
-.menu h3 {
-    margin-bottom: 15px;
-    font-size: 30px;
+.column.right {
+    opacity: 0.5;
+    margin-left: 175px;
 }
 
-.menu p {
-    margin-bottom: 20px;
-    font-size: 15px;
+.right img {
+    width: 583px;
 }
-
-@keyframes credits {
-    0%  {
-        top: 100%;
-    }
-    5%, 90% {
-        animation: 80s;
-    }
-    90%, 100% {
-        animation: 1s;
-        top: -500%;
-    }
-} */
 
 /* booking page styling */
 .bookingpg-img {

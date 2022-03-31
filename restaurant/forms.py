@@ -24,3 +24,11 @@ class BookingForm(forms.ModelForm):
              attrs={'type': 'time'})
         self.fields['end_time'].widget = forms.widgets.TimeInput(
              attrs={'type': 'time'})
+
+
+class ContactForm(forms.Form):
+    class Meta:
+        name = forms.CharField()
+        email = forms.EmailField()
+        contact = forms.NumberInput()
+        comment = forms.CharField(widget=forms.Textarea)
