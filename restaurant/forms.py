@@ -1,5 +1,5 @@
 from django import forms
-from .models import Booking
+from .models import Booking, Contact
 from django.forms import ValidationError
 from django.http import HttpResponseRedirect
 
@@ -26,9 +26,7 @@ class BookingForm(forms.ModelForm):
              attrs={'type': 'time'})
 
 
-class ContactForm(forms.Form):
+class ContactForm(forms.ModelForm):
     class Meta:
-        name = forms.CharField()
-        email = forms.EmailField()
-        contact = forms.NumberInput()
-        comment = forms.CharField(widget=forms.Textarea)
+        model = Contact
+        fields = ('name', 'email', 'phone_number', 'comment', )

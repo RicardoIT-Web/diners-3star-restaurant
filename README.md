@@ -10,10 +10,20 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 
 [UX](#ux)
 + [Purpose of the site](#purpose)
-+ [Project Scoping](#project-scoping-and-agile-methodology)
++ [Project Scoping & Agile Methodology](#project-scoping-and-agile-methodology)
 + [Wireframes](#wireframes)
 + [User Stories](#user-stories)
-+ [Agile Methodology](#Agile-Methodology)
+
+[Backend Features](#Backend-Features)
++ [The Table Model](#the-table-model)
++ [The Booking Model](#the-booking-model)
++ [The Contact Model](#the-contact-model)
+
+[Frontend Features](#Frontend-Features)
++ [The Menu page](#the-home-page)
++ [The Contacts Page](#the-contacts-page)
++ [The Booking page](#the-booking-page)
++ [The Social Media accounts](#the-social-media-accounts)
 
 # UX
 
@@ -103,22 +113,20 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
 [User Story #10](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/10) As an authenticated User I can click on the navbar and select "Bookings" so that I can book a table.
 
-# Existing Features
+# Backend Features
 
-## The Restaurant app
+This project is built using Django, adopting the MVT (Models-Views-Templates) methodology. The restaurant app which contains the MVT architechture to make this site interactive has three main models:
 
-This project is built using Django, adopting the MVT (Models-Views-Templates) methodology. The restaurant app which contains the MVT structure to make this site an interactive has two main models:
-
-* The Table Model
+### The Table Model
 
 The Table model is created to provide the restaurant with a more flexible approach of managing tables pending customer demand. As an example, in the winter months the outside tables might be moved indoors as the demand for outdoor space might be reduced or eliminated. This model provides an administrator with the functionality to be able to do just that.
 
 ![The Table Model](/media/images/table_management_admin_img.jpg)
 
 
-* The Booking Model
+### The Booking Model
 
-The booking model allows bothe the site administrator and the User to make a booking. The booking form requires that a table is selected, the number of guests attending, the date of the reservation, a start time and an end time. The form also contains a comments section to allow both the admin and the User to provide any comments such as any dietry restriction or perhaps raise any questions.
+The booking model allows both the site administrator and the User to make a booking. The booking form requires that a table is selected, the number of guests attending, the date of the reservation, a start time and an end time. The form also contains a comments section to allow both the admin and the User to provide any comments such as any dietry restriction or perhaps raise any questions.
 
 #### Admin view
 ![The Booking Model](/media/images/admin_booking_form.jpg)
@@ -126,8 +134,11 @@ The booking model allows bothe the site administrator and the User to make a boo
 #### User view
 ![The Booking Model](/media/images/user_booking_form.jpg)
 
+### The Contact Model
 
-## Other Features
+The contact model allows the User form to be displayed and the data to be "posted" to the PostgreSQL tabale. This in trun allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions.
+
+# Frontend Features
 
 There are of course other features on this site that would be expected. The site contains an offcanvas navigation panel porvided with the assistance of Bootstrap5, which holds repeated links as seen on the top navbar of the main page, but also contains links to the following items:
 
@@ -139,4 +150,12 @@ There are of course other features on this site that would be expected. The site
 * The Social Media accounts
 
 #### The Menu Page
-The Menu page will satisfy User Story 5, as referenced in the User stories section above. The User is able to click on the link and is diverted to the Menu page which is an image of a fixed Menu which does not change. 
+The Menu page will satisfy User Story 5, as referenced in the User stories section above. The User is able to click on the link and is diverted to the Menu page which is an image of a fixed Menu which does not change.
+
+#### The Contacts Page
+
+
+#### The Booking Page
+
+
+#### The Social Media Accounts

@@ -40,9 +40,10 @@ class Booking(models.Model):
         return f'{self.table}. Booked by {self.user} for {self.group_size} people, for the {self.date} at {self.start_time}.'
 
 
-class contacts(models.Model):
+class Contact(models.Model):
     name = models.ForeignKey(User, on_delete=models.CASCADE)
     email = models.EmailField(null=False)
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
     phone_number = models.CharField(validators=[phone_regex], max_length=17, blank=True)
     comment = models.CharField(blank=True, max_length=250)
+    actioned = models.BooleanField(default=False)

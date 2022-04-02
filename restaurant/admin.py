@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Booking, Table
+from .models import Booking, Table, Contact
 
 
 
@@ -22,3 +22,9 @@ class TableAdmin(admin.ModelAdmin):
 
     list_filter = ('location', 'status')
     list_display = ('number', 'location', 'capacity', 'status')
+
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'phone_number', 'comment', 'actioned')
+    search_fields = ('name', 'email', 'number', 'actioned')
