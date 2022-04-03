@@ -20,7 +20,6 @@ from restaurant.views import Home, Menu, ContactForm
 urlpatterns = [
     path('', Home.as_view(), name="home"),
     path('restaurant', Menu.as_view(), name="menu"),
-    path('restaurant', ContactForm, name="contacts"),
     path('restaurant/', include('restaurant.urls')),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),

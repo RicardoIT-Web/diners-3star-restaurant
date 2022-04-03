@@ -13,10 +13,15 @@
   </div>
 </div>
 
-<form method="post">
+<form class="contactform" method="POST">
   {% csrf_token %}
-  {{ form }}
+  {{ contact_form.name | as_crispy_field }}
+  {{ contact_form.email | as_crispy_field }}
+  {{ contact_form.phone_number | as_crispy_field }}
+  {{ contact_form.comment | as_crispy_field }}
+
   <button type="submit">Submit</button>
+  <button class="btn-clear" type="reset">Clear Form</button>
 </form>
 
 {% endblock %}
