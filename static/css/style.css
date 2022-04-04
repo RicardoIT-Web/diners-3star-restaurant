@@ -271,19 +271,20 @@ label.requiredField {
 
 .column.left {
     opacity: 0.5;
+    margin-left: 30px;
 }
 
 .column.center {
-    margin-left: 16px;
+    margin-left: 100px;
 }
 
 .column.right {
     opacity: 0.5;
-    margin-left: 275px;
+    margin-left: 204px;
 }
 
 .right img {
-    width: 500px;
+    width: 550px;
 }
 
 /* booking page styling */

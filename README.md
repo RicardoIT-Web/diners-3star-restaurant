@@ -174,17 +174,21 @@ The contact model allows both Admin and  User to fill in a form to respond to an
 
 # Frontend Features
 
-There are of course other features on this site that would be expected. The site contains an offcanvas navigation panel porvided with the assistance of Bootstrap5, which holds repeated links as seen on the top navbar of the main page, but also contains links to the following items:
-
-![Offcanvas Navbar](/media/images/offcanvas_navbar_img.jpg)
+There are of course other features on this site that would be expected. The site contains an offcanvas navigation panel provided with the assistance of Bootstrap5, which holds repeated links as seen on the top navbar of the main page view, but also contains links to the following items:
 
 * The Menu page
 * The Contacts Page
 * The Booking page
 * The Social Media accounts
 
+The main navbar and the offcanvas navigation is available to the User at all times.
+
+![Offcanvas Navbar](/media/images/offcanvas_navbar_img.jpg)
+
 #### The Menu Page
-The Menu page will satisfy User Story 5, as referenced in the User stories section above. The User is able to click on the link and is diverted to the Menu page which is an image of a fixed Menu which does not change.
+The Menu page will satisfy User Story 5, as referenced in the User stories section above. The User is able to click on the link and is directed to the Menu page which is an image of a fixed Menu which for this first release will not change.
+
+![The Menu Page](/media/images/menu_pg.jpg)
 
 #### The Contacts Page
 
@@ -214,3 +218,57 @@ The Menu page will satisfy User Story 5, as referenced in the User stories secti
 * Google fonts is used on this project to provide font types
 * google maps is used to provide a visual image of the location of the restaurant.
 
+# Technologies Used
+
+
+
+# Code Validation
+
+
+
+# Testing
+
+
+
+# Bugs During Development
+
+
+
+# Deployment
+
+### In the terminal
+
+* Install Postgresql: "pip3 install psycopg2-binary". Postgres is a way for the content to link to the database on the backend.
+* Install Webserver: "pip3 install gunicorn". This replaces the development server once the app is deployed to Heroku.
+* Create a requirements file: "pip3 freeze --local > requirements.txt". This creates a file to let heroku know which packages to install.
+
+### In Heroku
+
+* Open the Resources Tab
+* Add Postgres to your app using search bar, select - Heroku Postgres
+* Select Hobby Dev
+* Open  the settings tab
+* Click Reveal Config Vars - Heroku creates a Database_url variable
+* Install a database url package: "pip3 install dj-database-url". This package allows us to parse the database url that Heroku created.
+* Refreeze the requirements file: "pip3 freeze --local > requirements.txt".
+* Get the url of the remote database: "heroku config". This displays the DATABASE URL FROM HEROKU in the terminal - Copy this value
+
+### Django > settings.py
+
+* Comment out the original DATABASE settings.
+* Copy and Paste the DATABASE settings: "DATABASES = {'default': dj_database_url.parse('postgres://DATABASE URL FROM HEROKU')}"
+* Import dj_database_url: "import dj_database_url". Import at top of settings.py.
+
+### Back to the terminal
+
+* Run migrations: "python3 manage.py migrate".
+    * (If you get the error below while following these videos:django.db.utils.OperationalError: FATAL: role "somerandomletters" does not exist)
+    * Please run the following command in the terminal to fix it:(unset PGHOSTADDR)
+
+### In Gitpod
+
+* If not using the CI full template - Create a new file, .gitignore: django_todo / .gitignore. Lists any files we don’t want to include in the Github Repository.
+
+
+
+# Acknowledgements
