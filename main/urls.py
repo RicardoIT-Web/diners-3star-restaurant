@@ -18,10 +18,9 @@ from django.urls import path, include
 from restaurant.views import Home, Menu, ContactForm
 
 urlpatterns = [
-    path('', Home.as_view(), name="home"),
-    path('restaurant', Menu.as_view(), name="menu"),
-    path('restaurant/', include('restaurant.urls')),
     path('admin/', admin.site.urls),
+    path('', Home.as_view(), name="home"),
+    path('restaurant/', include('restaurant.urls')),
     path('summernote/', include('django_summernote.urls')),
     path('accounts/', include('allauth.urls')),
 ]

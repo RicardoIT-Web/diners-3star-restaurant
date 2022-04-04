@@ -1,8 +1,7 @@
-from django.shortcuts import render, get_object_or_404
-from django.views import generic, View
+from django.shortcuts import render
+from django.views import View
 from django.http import HttpResponseRedirect
-from restaurant import utils
-from .models import Booking, Table, Contact
+from django.contrib.auth.models import User
 from .forms import BookingForm, ContactForm
 
 
@@ -40,7 +39,8 @@ class BookingFormView(View):
     # def double_booking(self, table, date, start_time, end_time):
     #     double_booking = BookingForm.objects.all()
     #     if double_booking == BookingForm(table, date, start_time, end_time):
-    #         raise BookingForm.ValidationError(f'{table} is already booked. Please select another.')
+    #         raise BookingForm.ValidationError(f'{table} is already booked.
+    # Please select another.')
     #     return HttpResponseRedirect('bookingform.html')
 
         return render(request, 'index.html',)

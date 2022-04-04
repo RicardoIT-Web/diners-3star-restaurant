@@ -162,7 +162,7 @@ button.btn-clear {
     margin-left: 3px;
 }
 
-/* signin fields */
+/* signup fields */
 .register-container {
     padding-top: 25px;
     margin-left: 40%;
@@ -172,7 +172,7 @@ button.btn-clear {
     margin-left: 50px;
 }
 
-#id_email {
+input#id_email {
     margin-left: 8px;
 }
 
@@ -197,6 +197,9 @@ form button:hover {
     background-color: rgb(95, 95, 236);
     color: white;
 }
+
+/* Confirmation logout page */
+
 
 /* contacts page */
 .contact-container {
@@ -235,7 +238,7 @@ iframe#gmap_canvas {
     width: 80%;
 }
 
-#id_email {
+label.requiredField {
     margin: 0;
 }
 
@@ -268,20 +271,19 @@ iframe#gmap_canvas {
 
 .column.left {
     opacity: 0.5;
-    margin-left: 50px;
 }
 
 .column.center {
-    margin-left: 100px;
+    margin-left: 16px;
 }
 
 .column.right {
     opacity: 0.5;
-    margin-left: 175px;
+    margin-left: 275px;
 }
 
 .right img {
-    width: 583px;
+    width: 500px;
 }
 
 /* booking page styling */
