@@ -119,7 +119,7 @@ This project is built using Django, adopting the MVT (Models-Views-Templates) me
 
 ### The Table Model
 
-The Table model is created to provide the restaurant with a more flexible approach of managing tables pending customer demand. As an example, in the winter months the outside tables might be moved indoors as the demand for outdoor space might be reduced or eliminated. This model provides an administrator with the functionality to be able to do just that.
+The Table model is created to provide the restaurant with a more flexible approach of managing tables pending customer demand. This feature is only available to the restaurant administrator. As an example, in the winter months the outside tables might be moved indoors as the demand for outdoor space might be reduced or eliminated. This model provides an administrator with the functionality to be able to do just that.
 
 ![The Table Model](/media/images/table_management_admin_img.jpg)
 
@@ -136,7 +136,13 @@ The booking model allows both the site administrator and the User to make a book
 
 ### The Contact Model
 
-The contact model allows the User form to be displayed and the data to be "posted" to the PostgreSQL tabale. This in trun allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions.
+The contact model allows both Admin and  User to fill in a form to respond to any queries that might be received. The Admin might receive a call for some queries and can use this form to keep a record and a User might choose to fill in this form and raise a question to the restaurant. The data is "posted" to the PostgreSQL tabale. This in trun allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions.
+
+#### Admin view
+![The Contact Model](/media/images/admin_contact_form.jpg)
+
+#### User Contact Form - Admin Creation
+![The User Contact Form](/media/images/user_contact_form_admin_view.jpg)
 
 # Frontend Features
 

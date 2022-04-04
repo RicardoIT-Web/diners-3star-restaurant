@@ -1,27 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- google maps location -->
-<div class="mapouter">
-  <div class="gmap_canvas">
-    <iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Lisbon,%20Portugal&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-      <a href="https://putlocker-is.org"></a>
-      <br>
-      <style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}</style>
-      <a href="https://www.embedgooglemap.net"></a>
-    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+<div class="contact-container">
+  <!-- google maps location -->
+  <div class="mapouter">
+    <div class="contact-details">
+      <h3>Contact Details</h3>
+
+      <p>Address: <span>12345 Lisbon - Portugal</span></p>
+      <p>E-mail: <span>3star-restaurant@3star.com</span></p>
+      <p>Phone: <span>+351 222 2222</span></p>
+
+    </div>
+    <div class="gmap_canvas">
+      <iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Lisbon,%20Portugal&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <a href="https://putlocker-is.org"></a>
+        <br>
+        <style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}</style>
+        <a href="https://www.embedgooglemap.net"></a>
+      <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+    </div>
+      
+  </div>
+  <!-- User Contacts Form -->
+  <div class="form-container">
+    <p>If you have any questions, please do not hesitate to contact us;</p>
+    <form class="contactform" method="POST">
+      {% csrf_token %}
+      {{ contact_form.name | as_crispy_field }}
+      {{ contact_form.email | as_crispy_field }}
+      {{ contact_form.phone_number | as_crispy_field }}
+      {{ contact_form.comment | as_crispy_field }}
+
+      <button class="contact-btn" type="submit">Submit</button>
+      <button class="contact-clear-btn" type="reset">Clear Form</button>
+    </form>
   </div>
 </div>
-
-<form class="contactform" method="POST">
-  {% csrf_token %}
-  {{ contact_form.name | as_crispy_field }}
-  {{ contact_form.email | as_crispy_field }}
-  {{ contact_form.phone_number | as_crispy_field }}
-  {{ contact_form.comment | as_crispy_field }}
-
-  <button type="submit">Submit</button>
-  <button class="btn-clear" type="reset">Clear Form</button>
-</form>
-
 {% endblock %}
