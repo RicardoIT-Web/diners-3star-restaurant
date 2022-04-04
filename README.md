@@ -25,6 +25,34 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [The Booking page](#the-booking-page)
 + [The Social Media accounts](#the-social-media-accounts)
 
+[Technologies Used](#technologies-used)
++ [Languages Used](#languages-used)
++ [Frameworks](#Frameworks-Libraries-and-Programs-Used)
+
+[Code Validation](#code-validation)
++ [HTML Validation](#html-validation)
++ [CSS Validation](#css-validation)
++ [Python Validation](#python-validation)
+
+[Testing](#testing)
++ [Lighthouse Testing](#lighthouse-testing)
++ [Manual Testing](#manual-testing)
++ [Automated Testing](#automated-testing)
+
+[Bugs During Development](#bugs-during-development)
++ [](#)
++ [](#)
++ [](#)
+
+[Deployment](#deployment)
++ [](#)
+
+[Acknowledgements](#acknowledgements)
++ [Online Resources](#online-resources)
++ [Tutorials](#tutorials)
++ [Assistance](#assistance)
+
+
 # UX
 
 ## Purpose
@@ -165,3 +193,24 @@ The Menu page will satisfy User Story 5, as referenced in the User stories secti
 
 
 #### The Social Media Accounts
+
+# Technologies Used
+
+### Languages Used
+
+* HTML5
+* CSS3
+* Python3.8
+
+### Frameworks, Libraries and Programs Used
+
+* Balsamique was used to create the wireframes as part of the project scoping phase of this project
+* MS PowerPoint was used in the project scoping and Agile Methodology preperation phase
+* Django v3.2 is used for the architecture of the project
+* Postgresql is used for Object Relational database management of this project
+* Bootstrap v5 is used for some of the styling on this project
+* Cloudinary is used as a media file storage location
+* fontawesome is used to provide some styling features on this project
+* Google fonts is used on this project to provide font types
+* google maps is used to provide a visual image of the location of the restaurant.
+
