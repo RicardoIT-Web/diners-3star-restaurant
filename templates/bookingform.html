@@ -2,7 +2,22 @@
 
 {% block content %}
 
-
+{% if not user.is_authenticated %}
+    <div class="alert">
+        I'm sorry! You must be logged in if you want to make a reservation
+        <div class="btn-register">
+            <a href="{% url 'account_signup' %}">
+                <button>Register</button>
+            </a>
+        </div>
+        <div class="btn-login">
+            <a href="{% url 'account_login' %}">
+                <button>Login</button>
+            </a>
+        </div>
+  </div>
+{% else %}
+{% if user.is_authenticated %}
 <main class="bookingpg-img">
     <div class="booking-container">
         <h2>Book a table</h2>
@@ -20,4 +35,6 @@
         </form>
     </div>
 </main>
+{% endif %}
+{% endif %}
 {% endblock %}

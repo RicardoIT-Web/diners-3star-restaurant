@@ -288,6 +288,46 @@ label.requiredField {
 }
 
 /* booking page styling */
+
+/* The alert message box */
+.alert {
+    margin-top: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    background-color: #c1d1ad;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+/* The Register button */
+.btn-register button {
+    margin-left: 15px;
+    float: left;
+    cursor: pointer;
+    background-color: rgb(193 209 173);
+    color: black;
+}
+
+.btn-register button:hover {
+    background-color: rgb(95, 95, 236);
+    color: white;
+}
+
+.btn-login button {
+    margin-left: 15px;
+    float: right;
+    cursor: pointer;
+    background-color: rgb(193 209 173);
+    color: black;
+}
+
+.btn-login button:hover {
+    background-color: rgb(95, 95, 236);
+    color: white;
+}
+
 .bookingpg-img {
     background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648136151/beachbreakfast6_aqprxa.jpg");
     background-position: center;
