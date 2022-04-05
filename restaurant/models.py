@@ -1,6 +1,9 @@
+'''
+The Restaurant app models required for adminand User functionality.
+'''
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
+# from cloudinary.models import CloudinaryField
 from django.core.validators import RegexValidator
 
 
@@ -26,6 +29,9 @@ class Table(models.Model):
 
 
 class Booking(models.Model):
+    '''
+    This booking model is to allow for User and Admin to create bookings
+    '''
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     table = models.ForeignKey(Table, on_delete=models.CASCADE)
     group_size = models.PositiveIntegerField()
@@ -41,9 +47,14 @@ class Booking(models.Model):
 
 
 class Contact(models.Model):
+    '''
+    This Contact model is to allow Users to reach out to the Restaurant to
+    raise any questions or provide any suggests of improvement
+    '''
     name = models.CharField(max_length=150)
     email = models.EmailField(null=False)
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+9999999999'. Up to 15 digits allowed.")
-    phone_number = models.CharField(validators=[phone_regex], max_length=17, blank=True)
+    phone_number = models.CharField(
+        validators=[phone_regex], max_length=17, blank=True)
     comment = models.CharField(blank=True, max_length=250)
     actioned = models.BooleanField(default=False)

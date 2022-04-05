@@ -1,3 +1,6 @@
+'''
+App urls bringing the MVT architecture together.
+'''
 from django.urls import path
 from . import views
 
