@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from restaurant.views import Home, Menu, ContactForm
+from restaurant.views import Home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
