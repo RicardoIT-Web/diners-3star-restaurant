@@ -236,6 +236,12 @@ The Menu page will satisfy User Story 5, as referenced in the User stories secti
 
 # Deployment
 
+### Heroku
+
+* Create an account with Heroku if you dont already have one. [Heroku](https://www.heroku.com/) www.heroku.com
+
+## Installing Project Requirements
+
 ### In the terminal
 
 * Install Postgresql: "pip3 install psycopg2-binary". Postgres is a way for the content to link to the database on the backend.
@@ -267,7 +273,13 @@ The Menu page will satisfy User Story 5, as referenced in the User stories secti
 
 ### In Gitpod
 
-* If not using the CI full template - Create a new file, .gitignore: django_todo / .gitignore. Lists any files we don’t want to include in the Github Repository.
+* If you are not using the CI full template - Create a new file, .gitignore: django_todo / .gitignore. Lists any files we don’t want to include in the Github Repository.
+
+### Back to the terminal
+
+* Add your files to the local git repo: git add .
+* Commit the files.
+* Push to remote repo.
 
 
 
