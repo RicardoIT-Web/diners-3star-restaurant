@@ -129,39 +129,6 @@ a.btn-primary {
     border-color: none;
 }
 
-/* Login page styling */
-.login-container {
-    text-align: center;
-    padding-top: 150px;
-    position: fixed;
-    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648135876/login_background_img.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 91vh;
-}
-
-.login {
-    background-color: white;
-    opacity: 0.9;
-    width: 30%;
-    margin-left: 35%;
-    padding: 20px;
-}
-
-button.primaryAction {
-    margin-left: 1em
-}
-
-button.btn-clear {
-    margin-left: 20px;
-}
-
-#id_password {
-    margin-left: 3px;
-}
-
 /* signup fields */
 .register-container {
     padding-top: 25px;
@@ -198,57 +165,47 @@ form button:hover {
     color: white;
 }
 
-/* Confirmation logout page */
-
-
-/* contacts page */
-.contact-container {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-}
-
-.mapouter {
-    flex: 50%;
-    padding: 5px;
-    height: 0;
-}
-
-.form-container {
-    flex: 50%;
+/* Login page styling */
+.login-container {
+    text-align: center;
     padding-top: 150px;
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648135876/login_background_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 91vh;
+}
+
+.login {
+    background-color: white;
+    opacity: 0.9;
     width: 30%;
+    margin-left: 35%;
+    padding: 20px;
 }
 
-.contact-details {
-    float: left;
-    text-align: left;
-    padding-left: 50px;
+button.primaryAction {
+    margin-left: 1em
 }
 
-.gmap_canvas {
-    height: 0;
+button.btn-clear {
+    margin-left: 20px;
 }
 
-iframe#gmap_canvas {
-    padding-left: 50px;
+#id_password {
+    margin-left: 3px;
 }
 
-.contactform {
-    width: 80%;
-}
-
-label.requiredField {
-    margin: 0;
-}
-
-#id_comment {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.contact-btn {
-    margin: 0;
+/* Confirmation logout page */
+.logout-card-img {
+    transition: all 0.8s ease-out;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    float: right;   
+    width: 40%;
 }
 
 /* menu page styling */
@@ -287,8 +244,49 @@ label.requiredField {
     width: 550px;
 }
 
-/* booking page styling */
+/* contacts page */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.form-container {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5em;
+    margin-bottom: 6em;
+}
+
+.form-container p {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contactform #id_email {
+    margin: 0;
+}
+
+.form-container button {
+    margin-top: 2em;
+    margin-left: 0;
+}
+
+.contact-details {
+    float: left;
+    margin-top: 3em;
+    margin-right: 58px;
+    margin-left: 40%;
+}
+
+div .gmap_canvas {
+    float: left;
+    align-items: center;
+    height: 388px;
+}
+
+
+/* booking page styling */
 /* The alert message box */
 .register-alert {
     box-shadow: 0 15px 30px 1px grey;
