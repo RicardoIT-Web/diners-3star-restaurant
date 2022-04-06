@@ -3,7 +3,28 @@
 {% block content %}
 
 {% if not user.is_authenticated %}
-    <div class="alert">
+    <div class="register-alert">
+        <div class="alert-title">
+            <h1>Oh No!!</h1>
+            <p class="alert-text">We're so sorry but you need to be logged in if you wish to make a reservation</p>
+            <div class="alert-control-register">
+                <a href="{% url 'account_signup' %}"><button>Register</button></a>
+            </div>
+            <div class="alert-control-login">
+                <a href="{% url 'account_login' %}"><button>Login</button></a>
+            </div>
+        </div>
+        <div class="reg-card-img">
+            <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1648125656/beachbreakfast4_yldzwm.jpg" alt="Breakfast outside">
+            <div class="alternatively">
+                <h2>Alternatively</h2>
+                <p>You can simply fill out a contact form providing us with your request and we can make the reservation on your behalf</p>
+                <a href="{% url 'contacts' %}"><button>Contact Us</button></a> 
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="alert">
         I'm sorry! You must be logged in if you want to make a reservation
         <div class="btn-register">
             <a href="{% url 'account_signup' %}">
@@ -15,7 +36,7 @@
                 <button>Login</button>
             </a>
         </div>
-  </div>
+  </div> -->
 {% else %}
 {% if user.is_authenticated %}
 <main class="bookingpg-img">
