@@ -87,7 +87,7 @@ Where some sites demontrate some django functionality on the landing page ie. th
 
 
 #### The Register page
-The registration page a designed to be light on the eyes to the User. There are 3 cards above the registration form which aim to remind the customers of the speacial services available to them should they wish to take advantage.
+The registration page is designed to be light on the eyes to the User. There are 3 cards above the registration form which aim to remind the customers of the speacial services available to them should they wish to take advantage.
 
 ![Register page](/media/wireframes/register_page_wf.jpg)
 
@@ -149,6 +149,7 @@ This project is built using Django, adopting the MVT (Models-Views-Templates) me
 
 The Table model is created to provide the restaurant with a more flexible approach of managing tables pending customer demand. This feature is only available to the restaurant administrator. As an example, in the winter months the outside tables might be moved indoors as the demand for outdoor space might be reduced or eliminated. This model provides an administrator with the functionality to be able to do just that.
 
+#### The Admin View
 ![The Table Model](/media/images/table_management_admin_img.jpg)
 
 
@@ -159,18 +160,13 @@ The booking model allows both the site administrator and the User to make a book
 #### Admin view
 ![The Booking Model](/media/images/admin_booking_form.jpg)
 
-#### User view
-![The Booking Model](/media/images/user_booking_form.jpg)
-
 ### The Contact Model
 
-The contact model allows both Admin and  User to fill in a form to respond to any queries that might be received. The Admin might receive a call for some queries and can use this form to keep a record and a User might choose to fill in this form and raise a question to the restaurant. The data is "posted" to the PostgreSQL tabale. This in trun allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions.
+The contact model allows both Admin to fill in a form to respond to any queries that might be received. The Admin might receive a call for some queries and can use this form to keep a record of any queries riased. The data is "posted" to the PostgreSQL tabale. This in trun allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions. The admin view comes with an added feature of "Actioned" status to allow the restaurant to track opened and closed enquiries.
 
 #### Admin view
 ![The Contact Model](/media/images/admin_contact_form.jpg)
 
-#### User Contact Form - Admin Creation
-![The User Contact Form](/media/images/user_contact_form_admin_view.jpg)
 
 # Frontend Features
 
@@ -185,18 +181,35 @@ The main navbar and the offcanvas navigation is available to the User at all tim
 
 ![Offcanvas Navbar](/media/images/offcanvas_navbar_img.jpg)
 
-#### The Menu Page
-The Menu page will satisfy User Story 5, as referenced in the User stories section above. The User is able to click on the link and is directed to the Menu page which is an image of a fixed Menu which for this first release will not change.
+### The Menu Page
+
+The Menu page will satisfy User Story #5, as referenced in the User stories section above. The User is able to click on the link and is directed to the Menu page which is an image of a fixed Menu which for this first release will not change.
 
 ![The Menu Page](/media/images/menu_pg.jpg)
 
-#### The Contacts Page
+### The Contacts Page
 
+The contacts page satisfies User Story #6 and contains a simple form for the User to be able to reach out to the restaurant for answers to any queries or even to make and suggestions. The User can contact the restaurant via the provided form, or the page contains address details and contact phone number as alternative options. The map feature on the page is just a simple map illustrating the location of the restaurant. Should the User opt to call the restaurant, the administrator also has access to a contact form in the admin environment allowing the restaurant to keep a record of any external enquiries as detailed out above in the backend features.
 
-#### The Booking Page
+#### The User View
 
+![The Contacts Page](/media/images/user_contact_form_user_view.jpg)
 
-#### The Social Media Accounts
+### The Booking Page
+
+The booking page completes User Story #10 and allows a User to make a reservation at the restaurant. If the User is not authenticated, when they click on the bookings link they will be met with a message stating that they must be logged in if they wish to make a reservation. This feature does provide the User with an alternative which they can opt to select, this alternative takes them to the contacts form where they can raise a request and the restaurant will make the reservation on their behalf.
+
+#### The Booking Message
+
+![Not Authenticated Booking Message](/media/images/not_authenticated_user_booking_page.jpg)
+
+#### The Alternative message
+
+![Not Authenticated Alternative Message](/media/images/not_authenticated_user_booking_page_alt_message.jpg)
+
+### The Social Media Accounts
+
+The social media account links allow the Users to find out more about what other updates and activities the restaurant are involved in. By selecting one of these, the respective accounts will open up on a new tab.
 
 # Technologies Used
 
@@ -214,12 +227,9 @@ The Menu page will satisfy User Story 5, as referenced in the User stories secti
 * Postgresql is used for Object Relational database management of this project
 * Bootstrap v5 is used for some of the styling on this project
 * Cloudinary is used as a media file storage location
-* fontawesome is used to provide some styling features on this project
+* Fontawesome is used to provide some styling features on this project
 * Google fonts is used on this project to provide font types
-* google maps is used to provide a visual image of the location of the restaurant.
-
-# Technologies Used
-
+* Google maps is used to provide a visual image of the location of the restaurant.
 
 
 # Code Validation
@@ -282,5 +292,25 @@ The Menu page will satisfy User Story 5, as referenced in the User stories secti
 * Push to remote repo.
 
 
-
 # Acknowledgements
+
+### Online Resources
+
+* CI Blog Walkthrough Project
+* CI Tutoring Team
+* Pexels.com
+* Fontawesome
+* Cloudinary
+* Summernote
+* Bootstrap
+* StackOverflow
+* Heroku
+* GitHub / Gitpod
+
+
+### People
+
+* Matt Bodden
+* Dave Horrocks
+* DarshanDev
+* Rohit Sharma
