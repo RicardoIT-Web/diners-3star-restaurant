@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="register-alert">
+    <div class="alert-title">
+        <h1>Brilliant!!</h1>
+        <p class="alert-text">We can't wait to receive you. See you soon! <i class="fas fa-smile"></i></p>
+        <div class="alert-control-register">
+            <a href="{% url 'menu' %}"><button>Menu</button></a>
+        </div>
+        <div class="alert-control-login">
+            <a href="{% url 'account_logout' %}"><button>Sign Out</button></a>
+        </div>
+    </div>
+    <div class="reg-card-img">
+        <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1649344822/pexels-kampus-production-6605421_usmsbj.jpg" alt="smiling chef">
+    </div>
+</div>
+{% endblock %}

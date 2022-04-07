@@ -4,6 +4,7 @@ The Views.py file to create the User views display on the frontend.
 from django.shortcuts import render
 from django.views import View
 from .forms import BookingForm, ContactForm
+from .models import Booking
 
 
 class Home(View):
@@ -53,10 +54,11 @@ class BookingFormView(View):
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
             booking.user = request.user
-            if booking.table == BookingForm('table'):
-                print('function worked')
-            booking.save()
-        return render(request, 'index.html',)
+            if Booking.objects.filter(table=booking.table, date=booking.date, start_time=booking.start_time).exists():
+                return render(request, 'booking_not_avail.html',)
+            else:
+                booking.save()
+            return render(request, 'booking_successful.html',)
 
 
 class ContactFormView(View):
