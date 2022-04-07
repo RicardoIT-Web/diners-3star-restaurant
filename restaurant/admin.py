@@ -12,7 +12,8 @@ class BookingAdmin(SummernoteModelAdmin):
     '''
     The booking feature for the admin view
     '''
-    list_display = ('user', 'table', 'group_size', 'date', 'start_time', 'end_time', 'comment', 'created_on', 'approved')
+    list_display = ('user', 'table', 'group_size', 'date', 'start_time',
+                    'end_time', 'comment', 'created_on', 'approved')
     search_fields = ('user', 'date', 'table', 'group_size', 'start_time')
     list_filter = ('table', 'approved', 'created_on')
     summernote_fields = ('comment')

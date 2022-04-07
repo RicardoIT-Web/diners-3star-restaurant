@@ -54,7 +54,10 @@ class BookingFormView(View):
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
             booking.user = request.user
-            if Booking.objects.filter(table=booking.table, date=booking.date, start_time=booking.start_time).exists():
+            if Booking.objects.filter(
+                    table=booking.table, date=booking.date,
+                    start_time=booking.start_time
+                    ).exists():
                 return render(request, 'booking_not_avail.html',)
             else:
                 booking.save()
