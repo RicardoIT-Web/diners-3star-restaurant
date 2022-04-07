@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     margin: 0 auto;
 }
 
@@ -390,7 +390,7 @@ div .gmap_canvas {
 
 .reg-card-img button {
     border-radius: 10px;
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .reg-card-img button:hover {

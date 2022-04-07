@@ -20,7 +20,7 @@ from restaurant.views import Home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home.as_view(), name="home"),
-    path('restaurant/', include('restaurant.urls')),
+    path('restaurant/', include('restaurant.urls'), name="restaurant-urls"),
     path('summernote/', include('django_summernote.urls')),
     path('accounts/', include('allauth.urls')),
 ]
