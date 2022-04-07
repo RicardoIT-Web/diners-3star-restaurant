@@ -3,9 +3,7 @@ The forms.py file used to create the structure of the forms
 which will be used by Admin and Users for data creation and extraction
 '''
 from django import forms
-# from django.http import HttpResponseRedirect
 from .models import Booking, Contact
-# from django.forms import ValidationError
 
 
 class DateInput(forms.DateInput):

@@ -1,5 +1,5 @@
 '''
-The testcases
+The testcases TDD methodology
 '''
 # from django.test import TestCase
 
