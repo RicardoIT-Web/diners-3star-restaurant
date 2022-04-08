@@ -4,8 +4,9 @@
 <html class="h-100" lang="en">
 
 <head>
-  <title>diners-3star-restaurant</title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
@@ -16,13 +17,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+  <!-- Link to style/css -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>diners-3star-restaurant</title>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
   <!-- navigation panel with list options Bootstrap -->
-  <nav class="navbar navbar-light fixed-top" style="background-color:rgb(193 209 173)">
+  <nav id="navbar" class="navbar navbar-light fixed-top" style="background-color:rgb(193 209 173)">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'home' %}">Diners 3Star Restaurant</a>
       <ul >
@@ -95,7 +98,7 @@
     <!-- Content here -->
     {% endblock content %}
   </main>
-
+    <!-- Footer section -->
   <footer class="footer mt-auto py-3 dark-bg" style="background-color:rgb(193 209 173)">
     <div class="footer-container">
       <div id="left">
@@ -111,4 +114,6 @@
 
     </div>
   </footer>
+  <!-- link to script file -->
+  <script src="../../static/js/script.js"></script>
 </body>

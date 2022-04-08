@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0 auto;
 }
 
@@ -333,6 +333,7 @@ div .gmap_canvas {
 
 .alert-title button {
     border-radius: 10px;
+    background-color: rgb(193 209 173);
 }
 
 .alert-title button:hover {
@@ -392,6 +393,7 @@ div .gmap_canvas {
 .reg-card-img button {
     border-radius: 10px;
     margin-top: 15px;
+    background-color: rgb(193 209 173);
 }
 
 .reg-card-img button:hover {
@@ -457,4 +459,84 @@ main h2 {
 
 textarea.form-control {
     height: 130px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 539px) {
+    /* home page */
+    .navbar-brand {
+        margin-left: 60px;
+    }
+
+    .img-fluid {
+        height: 45vh;
+        margin-top: 50%;
+    }
+
+    .navbar ul {
+        padding-right: 0;
+    }
+
+    #left h5 {
+        font-size: 17px;
+    }
+
+    #center {
+        font-size: 14px;
+    }
+
+    /* register page*/
+    .navbar {
+        position: fixed;
+        transition: top 0.5s; /* transition hide navbar when scrolling down */
+    }
+
+    .card-container {
+        margin-top: 90px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .register-container {
+        padding-top: 2px;
+        margin-left: 15px;
+        height: 60vh;
+    }
+
+    /* Login page */
+    .login-container {
+        height: 45vh;
+        margin-top: 17%;
+    }
+
+    .login {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 35px;
+        padding: 10px;
+    }
+
+    /* Menu page */
+    .column.left {
+        display: none;
+    }
+
+    .column.center {
+        margin: 0;
+    }
+
+    .column.right {
+        display: none;
+    }
+    
+    .column img {
+        padding-left: 0;
+        padding-top: 77px;
+        width: 400%;
+    }
+
+    /* Contacts Page */
+    
+
 }
