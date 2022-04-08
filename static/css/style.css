@@ -16,6 +16,10 @@ li {
 }
 
 /* offcanvas styling */
+.offcanvas-title {
+    font-weight: bolder;
+}
+
 .modal-backdrop.show {
     opacity: 0;
 }
@@ -30,7 +34,22 @@ li {
     width: 55px;
 }
 
-.nav-item a {
+.nav-item-home a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item-register a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item-login a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item-logout a {
     text-decoration: none;
     color: black;
 }
@@ -117,7 +136,8 @@ h5 {
 .card {
     display: inline-block;
     align-items: center;
-    margin: 0 15px 0 15px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 img.card-img-top {
@@ -159,6 +179,7 @@ form button {
     text-decoration: none;
     background-color: rgb(193 209 173);
     color: black;
+    font-weight: bolder;
 }
 
 form button:hover {
@@ -450,6 +471,7 @@ div .gmap_canvas {
 main h2 {
     margin-top: .5em;
     text-align: center;
+    font-weight: bolder;
 }
 
 .booking-btn {
@@ -461,19 +483,45 @@ textarea.form-control {
     height: 130px;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 539px) {
+@media only screen and (min-width: 320px) {
     /* home page */
     .navbar-brand {
-        margin-left: 60px;
+        margin-left: 45px;
+    }
+
+    .navbar ul {
+        margin-left: -14px;
+    }
+
+    .offcanvas-body {
+        padding-bottom: 77px;
+        margin-left: 23px;
+    }
+
+    .nav-link i {
+        margin-left: 15px;
+    }
+
+    .fa-facebook-square {
+        margin-left: 15px;
+    }
+
+    .fa-twitter {
+        margin-left: 15px;
+    }
+
+    .fa-instagram {
+        margin-left: 15px;
     }
 
     .img-fluid {
         height: 45vh;
-        margin-top: 50%;
+        margin-top: 42%;
     }
 
     .navbar ul {
         padding-right: 0;
+        margin: -31px;
     }
 
     #left h5 {
@@ -484,10 +532,26 @@ textarea.form-control {
         font-size: 14px;
     }
 
+    .footer-container div {
+        padding-left: 8px;
+    }
+
+    i.fas.fa-copyright {
+        padding-left: 6px;
+        font-size: 13px;
+    }
+
+    #center p {
+        font-size: 13px;
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+
+
     /* register page*/
     .navbar {
         position: fixed;
-        transition: top 0.5s; /* transition hide navbar when scrolling down */
+        transition: top 0.3s; /* transition hide navbar when scrolling down */
     }
 
     .card-container {
@@ -495,26 +559,48 @@ textarea.form-control {
     }
 
     .card {
-        margin: 10px;
+        width: 92%;
+        margin-left: 2.5%;
+        margin-top: 10px;
     }
 
     .register-container {
-        padding-top: 2px;
-        margin-left: 15px;
-        height: 60vh;
+        height: 87vh;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    p label {
+        font-size: 14px;
+    }
+
+    #id_username {
+        margin-left: 43px;
+    }
+
+    input#id_email {
+        margin-left: 6px;
+    }
+
+    form button {
+        margin-left: 3em;
     }
 
     /* Login page */
     .login-container {
-        height: 45vh;
-        margin-top: 17%;
+        height: 43vh;
+        margin-top: 20%;
+    }
+
+    #id_password1 {
+        margin-left: 45px;
     }
 
     .login {
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 35px;
+        width: 95%;
+        margin-left: 2.5%;
         padding: 10px;
+        height: 71vh;
     }
 
     /* Menu page */
@@ -537,6 +623,284 @@ textarea.form-control {
     }
 
     /* Contacts Page */
+    .form-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 8em;
+        margin-bottom: 0;
+    }
+
+    .contact-details {
+        margin-top: 3em;
+        margin-right: 0px;
+        margin-left: 6%;
+    }
+
+    .gmap_canvas {
+        width: 300px;
+        margin-left: 7px;
+        margin-bottom: 100px;
+    }
+
+    /* not authenticated User alert */
+    /* Booking Page */
+    .register-alert {
+        margin: 8em auto;
+        height: 223px;
+        width: 310px;
+    }
+
+    .alert-title {
+        padding: 17px;
+        width: 50%;
+    }
+
+    .alert-title h1 {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .alert-title p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .alert-title a {
+        margin-top: 0;
+        padding-right: 12px;
+    }
+
+    .alert-title button {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-top: 14px;
+    }
+
+    .alternatively h2 {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .reg-card-img p {
+        font-size: 12px;
+    }
+
+    .reg-card-img button {
+        margin-top: 4px;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+
+    /* Authenticated User Booking Page */
+    .booking-container {
+        padding-top: 100px;
+    }
+
+    .bookingform {
+        max-width: 90%;
+        margin-left: 5%;
+        height: 100vh;
+    }
+
+    textarea.form-control {
+        height: 100px;
+    }
+
+    .booking-btn {
+        margin-left: 15%;
+        margin-top: 13px;
+    }
+
+    .bookingpg-img {
+        height: 165vh;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    /* home page */
+    .navbar {
+        position: fixed;
+        transition: top 0.3s; /* transition hide navbar when scrolling down */
+    }
+
+    .navbar-brand {
+        margin-left: 55px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+    }
+
+    .offcanvas-body {
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    ul {
+        padding-right: 0rem;
+    }
+
+    .img-fluid {
+        height: 45vh;
+        margin-top: 47%;
+    }
+
+    .footer-container div {
+        padding-left: 8px;
+    }
+
+    i.fas.fa-copyright {
+        padding-left: 6px;
+        font-size: 13px;
+    }
+
+    #center p {
+        font-size: 13px;
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+
+    /* register page */
+    .card-container {
+        margin-top: 105px;
+    }
+
+    .card {
+        width: 90%;
+        margin-top: 2%;
+    }
+
+    .register-container {
+        height: 65vh;
+        width: 90%;
+        margin-left: 6%;
+    }
+
+    p label {
+        font-size: 14px;
+    }
+
+    #id_username {
+        margin-left: 50px;
+    }
+
+    input#id_email {
+        margin-left: 14px;
+    }
+
+    #id_password2 {
+        margin-left: 7px;
+    }
+
+    form button {
+        margin-left: 3em;
+    }
+
+    /* Login page */
+    .login-container {
+        height: 43vh;
+        margin-top: 20%;
+    }
+
+    #id_password1 {
+        margin-left: 53px;
+    }
+
+    .login {
+        width: 95%;
+        margin-left: 2.5%;
+        padding: 10px;
+        height: 40vh;
+    }
+
+    /* Menu page */
+    .column.left {
+        display: none;
+    }
+
+    .column.center {
+        margin: 0;
+    }
+
+    .column.right {
+        display: none;
+    }
     
+    .column img {
+        padding-left: 0;
+        padding-top: 77px;
+        width: 400%;
+    }
+
+    /* Contacts Page */
+    .form-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 8em;
+        margin-bottom: 0;
+    }
+
+    .contact-details {
+        margin-top: 3em;
+        margin-right: 0px;
+        margin-left: 6%;
+    }
+
+    .gmap_canvas {
+        margin-left: 22px;
+        margin-bottom: 100px;
+    }
+
+    /* not authenticated User alert */
+    /* Booking Page */
+    .register-alert {
+        margin: 13em auto;
+        height: 210px;
+        width: 95%;
+    }
+
+    .alert-title {
+        padding: 17px;
+        width: 50%;
+    }
+
+    .alert-title h1 {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .alert-title p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .alert-title a {
+        margin-top: 0;
+        padding-right: 12px;
+    }
+
+    .alert-title button {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-top: 14px;
+    }
+
+    .alternatively h2 {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .reg-card-img p {
+        font-size: 12px;
+    }
+
+    .reg-card-img button {
+        margin-top: 4px;
+        font-size: 12px;
+        font-weight: bolder;
+    }
 
 }
+
+
