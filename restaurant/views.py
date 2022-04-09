@@ -3,6 +3,7 @@ The Views.py file to create the User views display on the frontend.
 '''
 from django.shortcuts import render
 from django.views import View
+from django.views.generic.base import TemplateView
 from .forms import BookingForm, ContactForm
 from .models import Booking
 
@@ -31,6 +32,17 @@ class Menu(View):
         return render(request, 'menu.html',)
 
 
+class BookingList(TemplateView):
+
+    template_name = 'user_booking.html'
+
+    def get_context_data(self, **kwargs):
+        return super().get_context_data(
+            bookings=self.request.user.booking_set.all(),
+            **kwargs
+        )
+
+
 class BookingFormView(View):
     '''
     The Booking form view pulling data from the booking form in forms.py
@@ -56,7 +68,8 @@ class BookingFormView(View):
             booking.user = request.user
             if Booking.objects.filter(
                     table=booking.table, date=booking.date,
-                    start_time=booking.start_time
+                    start_time=booking.start_time,
+                    approved=booking.approved is True
                     ).exists():
                 return render(request, 'booking_not_avail.html',)
             else:

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for booking in user.booking_set.all %}
+    <h2>{{ booking }}</h2>
+    {% endfor %}
+
+{% endblock %}

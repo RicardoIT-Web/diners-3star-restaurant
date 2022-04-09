@@ -36,6 +36,9 @@
         <li class="nav-item-logout">
           <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
         </li>
+        <li class="nav-item-logout">
+          <a class="nav-link" href="{% url 'user_booking' %}">Your Bookings</a>
+        </li>
         {% else %}
         <li class="nav-item-register">
           <a class="nav-link active" aria-current="page" href="{% url 'account_signup' %}">Register</a>

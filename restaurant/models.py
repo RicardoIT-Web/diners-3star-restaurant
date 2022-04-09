@@ -43,7 +43,7 @@ class Booking(models.Model):
     approved = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.table}. Booked by {self.user} for {self.group_size} people, for the {self.date} at {self.start_time}.'
+        return f'{self.table}. Booked by {self.user} for {self.group_size} people, for the {self.date} at {self.start_time}. Status {self.approved}'
 
 
 class Contact(models.Model):
