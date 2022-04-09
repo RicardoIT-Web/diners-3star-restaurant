@@ -7,7 +7,7 @@
 {% block content %}
 
 <div class="register-alert">
-  <div class="alert-title">
+  <div class="alert-title" id="signout">
       <h1>{% trans "Sign Out" %}</h1>
       <p class="alert-text">{% trans 'Are you sure you want to sign out?' %}</p>
       <form method="post" action="{% url 'account_logout' %}">
