@@ -57,15 +57,14 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 
 ## Purpose
 ----
-This project was developed to satisfy my fourth Milestone Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each and 2 hall tables each sitting a maximum of 6 people on each table.
+This project was developed to satisfy my fourth Milestone Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each table and 2 hall tables each sitting a maximum of 6 people on each table.
 
 The restaurant prides itself in providing their customers with a more inclusive experience by allowing customers to visit the kitchen area, speak to the chef and their team and be able to have a little taste of any Menu meal before ordering.
 
 
 ## Project Scoping and Agile Methodology
 
-Using the Design Thinking approach to this project, some prework was carried out to bring the ideas and functionality of the project to "paper". Powerpoint slides are used to illustrate this process beggining with a problem statement
-Entity Relationship diagram
+Using the Design Thinking approach to this project, some prework was carried out to bring the ideas and functionality of the project to "paper". Powerpoint slides are used to illustrate this process beggining with a problem statement, the slides also include Entity Relationship diagrams and map os how all epics link to their respective User Stories. Each User Story will include steps that aim to fulfill the CRUD (create-read-update-delete) functionalities expected with any database application.
 
 The raw data can be downloaded from [here](https://github.com/RicardoIT-Web/diners-3star-restaurant/blob/main/media/agile_methodology/Diners-3Star-Restaurant_project_Scoping.pptx).
 
@@ -150,6 +149,8 @@ This project is built using Django, adopting the MVT (Models-Views-Templates) me
 The Table model is created to provide the restaurant with a more flexible approach of managing tables pending customer demand. This feature is only available to the restaurant administrator. As an example, in the winter months the outside tables might be moved indoors as the demand for outdoor space might be reduced or eliminated. This model provides an administrator with the functionality to be able to do just that.
 
 #### The Admin View
+
+Employing all CRUD features - The administrator can Create, Read, Update and Delete any of these tables.
 ![The Table Model](/media/images/table_management_admin_img.jpg)
 
 
@@ -158,13 +159,17 @@ The Table model is created to provide the restaurant with a more flexible approa
 The booking model allows both the site administrator and the User to make a booking. The booking form requires that a table is selected, the number of guests attending, the date of the reservation, a start time and an end time. The form also contains a comments section to allow both the admin and the User to provide any comments such as any dietry restriction or perhaps raise any questions.
 
 #### Admin view
+
+Employing all CRUD features - The administrator can Create, Read, Update and Delete any of the bookings.
 ![The Booking Model](/media/images/admin_booking_form.jpg)
 
 ### The Contact Model
 
-The contact model allows both Admin to fill in a form to respond to any queries that might be received. The Admin might receive a call for some queries and can use this form to keep a record of any queries riased. The data is "posted" to the PostgreSQL tabale. This in trun allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions. The admin view comes with an added feature of "Actioned" status to allow the restaurant to track opened and closed enquiries.
+The contact model allows the User to fill in a form and raise any queries. The Admin might receive a call and can use this form to keep a record of any queries riased. The data is "posted" to the PostgreSQL tabale. This in turn allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions. The admin view comes with an added feature of "Actioned" status to allow the restaurant to track opened and closed enquiries.
 
 #### Admin view
+
+Employing all CRUD features - The administrator can Create, Read, Update and Delete any of the Contacts form.
 ![The Contact Model](/media/images/admin_contact_form.jpg)
 
 
@@ -176,6 +181,8 @@ There are of course other features on this site that would be expected. The site
 * The Contacts Page
 * The Booking page
 * The Social Media accounts
+* Confirmation of Booking received
+* Alert message of unavailable table.
 
 The main navbar and the offcanvas navigation is available to the User at all times.
 
@@ -183,17 +190,21 @@ The main navbar and the offcanvas navigation is available to the User at all tim
 
 ### The Menu Page
 
-The Menu page will satisfy User Story #5, as referenced in the User stories section above. The User is able to click on the link and is directed to the Menu page which is an image of a fixed Menu which for this first release will not change.
+The Menu page will satisfy User Story #5, as referenced in the User stories section above. The User is able to click on the link and is directed to the Menu page which is an image of a fixed Menu which for this first release will not be changeable.
 
 ![The Menu Page](/media/images/menu_pg.jpg)
 
 ### The Contacts Page
 
-The contacts page satisfies User Story #6 and contains a simple form for the User to be able to reach out to the restaurant for answers to any queries or even to make and suggestions. The User can contact the restaurant via the provided form, or the page contains address details and contact phone number as alternative options. The map feature on the page is just a simple map illustrating the location of the restaurant. Should the User opt to call the restaurant, the administrator also has access to a contact form in the admin environment allowing the restaurant to keep a record of any external enquiries as detailed out above in the backend features.
+The contacts page satisfies User Story #6 and contains a simple form for the User to be able to reach out to the restaurant for answers to any queries or even to make and suggestions. The User can contact the restaurant via the provided form, or the page contains address details and contact phone number as alternative options. The map feature on the page is just a simple map illustrating the location of the restaurant. Should the User opt to call the restaurant, the administrator also has access to a contact form in the admin environment allowing the restaurant to keep a record of any external enquiries as detailed above.
 
 #### The User View
 
 ![The Contacts Page](/media/images/user_contact_form_user_view.jpg)
+
+#### The Admin View
+
+![The Contacts Page](/media/images/user_contact_form_admin_view.jpg)
 
 ### The Booking Page
 
@@ -234,14 +245,44 @@ The social media account links allow the Users to find out more about what other
 
 # Code Validation
 
+### HTML Validation
 
+### CSS Validation
+
+### Python Validation
 
 # Testing
 
+### Lighthouse Validation
+
+### Manual Testing
+
+### Automated Testing
 
 
 # Bugs During Development
 
+During the development phase of this project, Heroku made serveral updates to every app in my account. At some point, my static files stopped connecting to the heroku app meaning I was able to view my project in deployed view but it was missing a lot of CSS styiling.
+
+To fix this with the support of the tutors at CI I went through the following steps;
+
+* Access Heroku using the terminal
+
+![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles.jpg)
+
+* Enter your email
+    * For the password, go into your cloudinary profile and copy the API key
+    * paste API key in terminal password
+
+![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles3.jpg)
+
+* Once login confirmed
+    * in the terminal type heroku run python manage.py collectstatic -a diners-3star-restaurant
+    * you will be prompted to confirm Y or N
+
+![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles5.jpg)
+
+* Once I selected Y the problem was fixed and the static files were now being copied to Heroku
 
 
 # Deployment
@@ -291,6 +332,69 @@ The social media account links allow the Users to find out more about what other
 * Commit the files.
 * Push to remote repo.
 
+### In Gitpod
+
+* Create a new file: Procfile
+    * Add gunicorn to Procfile - web: gunicorn django_todo.wsgi:application
+
+### Back to the terminal
+
+* Add the Procfile to the git Repo - git add Procfile
+* Git Commit / push
+
+### In heroku / settings tab
+
+* Click Open App
+
+### In the Browser
+
+* Copy the url
+
+### Django > In settings.py
+
+* Paste in the url to ALLOWED_HOSTS value - ALLOWED_HOSTS = ['diners-3star-restaurant.herokuapp.com'] - Make sure to delete the Https structure at the start of the url & the final ‘/’
+
+### In the Terminal
+
+* Add settings.py file to gitpod repo - git add django_todo/settings.py
+* git commit -m “Fixed Allowed_hosts”
+* git push
+
+### Django > In settings.py
+
+* Add import os to settings.py
+    * import os
+* Git add, commit and push your repo to github once you have done this.
+
+### Back to Heroku
+
+* Open your app
+* Open the Deploy Tab
+* Select a Deployment Method Option - Github - Connect to Github
+* Search for the Repo Name
+* Click Connect
+* Enable Automatic Deploys
+
+### Django > In settings.py
+
+* Get the Secret Key value using an environment variable
+    * SECRET_KEY = os.environ.get('SECRET_KEY', '---secretkeyvalue---’)
+* Replace the Heroku host value in ALLOWED_HOSTS - ALLOWED_HOSTS = [os.environ.get('diners-3star-restaurant.herokuapp.com')]
+* Replace the Database URL value in DATABASES - 
+    * DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+
+### Back to Heroku
+
+* Click the Settings tab
+* Click Reveal Config Vars
+* Add New Variable
+
+* Wait for the Repo to deploy to Heroku
+* Refresh the herokuapp in the browser
+* The app should now be working
+
 
 # Acknowledgements
 
@@ -298,19 +402,18 @@ The social media account links allow the Users to find out more about what other
 
 * CI Blog Walkthrough Project
 * CI Tutoring Team
+* Bootstrap
+* Heroku
+* Stackoverflow
 * Pexels.com
 * Fontawesome
 * Cloudinary
 * Summernote
-* Bootstrap
-* StackOverflow
-* Heroku
 * GitHub / Gitpod
 
 
 ### People
 
 * Matt Bodden
-* Dave Horrocks
 * DarshanDev
 * Rohit Sharma

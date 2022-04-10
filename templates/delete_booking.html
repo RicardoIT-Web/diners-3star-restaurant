@@ -2,10 +2,24 @@
 
 {% block content %}
 
-<form method="post">
-    {% csrf_token %}
-    <p>Are you sure you want to delete your booking?</p>
-    <input type="submit" value="Confirm">
-</form>
+<a href="{% url 'menu' %}"></a><button>Back to Bookings</button>
 
+<div class="register-alert">
+    <div class="alert-title" id="signout">
+        <form method="post">
+            {% csrf_token %}
+            <p class="alert-text">Are you sure you want to delete your booking?</p>
+            <button><input type="submit" value="Confirm"/></button>
+
+        </form>
+    </div>
+    <div class="reg-card-img">
+        <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1649343942/pexels-ron-lach-8879653_1_bbjgjc.jpg" alt="Breakfast outside">
+        <div class="alternatively">
+            <h2>Alternatively</h2>
+            <p>You can simply fill out a contact form providing us with your request and we can make the reservation on your behalf</p>
+            <a href="{% url 'menu' %}"></a><button>Back to Bookings</button> 
+        </div>
+    </div>
+    
 {% endblock %}

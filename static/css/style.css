@@ -150,7 +150,7 @@ a.btn-primary {
     border-color: none;
 }
 
-/* signup fields */
+/* register fields */
 .register-container {
     padding-top: 25px;
     margin-left: 40%;
@@ -230,7 +230,7 @@ button.btn-clear {
     width: 40%;
 }
 
-/* menu page styling */
+/* menu page */
 .menu_container {
     margin: 0;
 }
@@ -309,7 +309,7 @@ div .gmap_canvas {
 
 
 /* booking page styling */
-/* The alert message box */
+/* The alert message box for user NOT authenticated */
 .register-alert {
     box-shadow: 0 15px 30px 1px grey;
     background: rgb(193 209 173);
@@ -482,6 +482,9 @@ main h2 {
 textarea.form-control {
     height: 130px;
 }
+
+/* User Bookings List */
+
 
 @media only screen and (min-width: 320px) and (max-width: 359px) {
     /* home page */

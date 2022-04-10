@@ -4,7 +4,7 @@ The Views.py file to create the User views display on the frontend.
 from django.shortcuts import render
 from django.views import View
 from django.views.generic.base import TemplateView
-from django.views.generic.edit import DeleteView
+from django.views.generic.edit import UpdateView, DeleteView
 from .forms import BookingForm, ContactForm
 from .models import Booking
 
@@ -42,15 +42,23 @@ class BookingList(TemplateView):
         return context
 
 
-class BookingDelete(DeleteView):
+class BookingAmend(UpdateView):
     model = Booking
-    template_name = 'delete_booking.html'
-    success_url = '/'
+    template_name = 'amend_booking.html'
+    fields = ['table', 'group_size', 'date', 'start_time', 'end_time', 'comment']
+    success_url = '/restaurant/booking_list/'
 
     def get_queryset(self):
         return self.request.user.booking_set.all()
 
 
+class BookingDelete(DeleteView):
+    model = Booking
+    template_name = 'delete_booking.html'
+    success_url = '/restaurant/booking_list/'
+
+    def get_queryset(self):
+        return self.request.user.booking_set.all()
 
 
 class BookingFormView(View):
