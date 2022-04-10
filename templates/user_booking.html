@@ -2,8 +2,9 @@
 
 {% block content %}
 
-    {% for booking in user.booking_set.all %}
+    {% for booking in bookings %}
     <h2>{{ booking }}</h2>
+    <a href="{% url 'booking_delete' pk=booking.pk %}">delete</a><br>
     {% endfor %}
 
 {% endblock %}
