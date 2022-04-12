@@ -2,10 +2,22 @@
 
 {% block content %}
 
-<form method="post">
-    {% csrf_token %}
+<!-- <form method="post">
     <p>Are you sure you want to amend your booking?</p>
-    <input type="submit" value="Update">
-</form>
-
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+</form> -->
+<main class="bookingpg-img">
+    <div class="booking-container">
+        <h2>Amend your booking</h2>
+        <form method="post">
+        <p>Are you sure you want to amend your booking?</p>
+        <form class="bookingform" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <input type="submit" value="Save">
+        </form>
+    </div>
+</main>
 {% endblock %}

@@ -415,6 +415,7 @@ div .gmap_canvas {
     border-radius: 10px;
     margin-top: 15px;
     background-color: rgb(193 209 173);
+    font-weight: bolder;
 }
 
 .reg-card-img button:hover {
@@ -484,12 +485,81 @@ textarea.form-control {
 }
 
 /* User Bookings List */
+.user-booking {
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgb(193 209 173);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 13em auto;
+    height: 350px;
+    width: 800px;
+}
+
+.user-booking {
+    margin: 5em auto;
+    height: 222px;
+    width: 596px;
+}
+
+#yourbooking {
+    padding: 30px;
+    width: 50%;
+}
+
+#yourbooking {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    float: left;
+    width: 40%;
+}
+
+.alert-title p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#yourbooking a {
+    margin-top: 0;
+    padding-right: 0;
+    text-decoration: none;
+    color: black;
+}
+
+#yourbooking a:hover {
+    background-color: rgb(95, 95, 236);
+    color: white;
+}
+
+.alert-title button {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-top: 14px;
+}
+
+.logout-card-img-user {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    width: 50%;
+}
+
+.logout-card-img-user img {
+    height: 100%;
+    width: 90%;
+    margin-left: 30px;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 359px) {
-    /* home page */
+    /* home page Not Authenticated User*/
     .navbar-brand {
-        margin-left: 45px;
+        margin-left: 0px;
     }
 
     .navbar ul {
@@ -550,6 +620,12 @@ textarea.form-control {
         padding-left: 6px;
     }
 
+    /* Home page Authenticated User */
+    #auth_user {
+        margin: -47px;
+        font-size: 13px;
+    }
+
 
     /* register page*/
     .navbar {
@@ -591,8 +667,8 @@ textarea.form-control {
 
     /* Login page */
     .login-container {
-        height: 43vh;
         margin-top: 20%;
+        height: 80vh;
     }
 
     #id_password1 {
@@ -602,8 +678,9 @@ textarea.form-control {
     .login {
         width: 95%;
         margin-left: 2.5%;
-        padding: 10px;
-        height: 71vh;
+        padding: 6px;
+        height: 54vh;
+        margin-top: -102px;
     }
 
     /* Menu page */
@@ -729,11 +806,15 @@ textarea.form-control {
     }
 
     .navbar-brand {
-        margin-left: 55px;
+        margin-left: 0;
+    }
+
+    #auth_user {
+        margin-left: -49px;
     }
 
     .navbar ul {
-        margin-left: 0;
+        margin-left: 3px;
     }
 
     .offcanvas-body {
@@ -804,8 +885,8 @@ textarea.form-control {
 
     /* Login page */
     .login-container {
-        height: 43vh;
-        margin-top: 20%;
+        height: 39vh;
+        margin-top: 102%;
     }
 
     #id_password1 {
@@ -816,7 +897,8 @@ textarea.form-control {
         width: 95%;
         margin-left: 2.5%;
         padding: 10px;
-        height: 40vh;
+        height: 35vh;
+        margin-top: -418px;
     }
 
     /* Menu page */
@@ -890,6 +972,7 @@ textarea.form-control {
         font-size: 13px;
         font-weight: bolder;
         margin-top: 14px;
+        margin-left: 0;
     }
 
     .alternatively h2 {
@@ -934,7 +1017,7 @@ textarea.form-control {
 @media only screen and (min-width: 375px) and (max-width: 413px) {
     /* home page */
     .navbar-brand {
-        margin-left: 65px;
+        margin-left: 0px;
     }
 
     .navbar ul {
@@ -967,9 +1050,13 @@ textarea.form-control {
         margin-top: 42%;
     }
 
+    #auth_user {
+        margin-left: -47px;
+    }
+
     .navbar ul {
         padding-right: 0;
-        margin: 10px;
+        margin: -30px;
     }
 
     #left h5 {
@@ -1047,8 +1134,8 @@ textarea.form-control {
 
     /* Login page */
     .login-container {
-        height: 37vh;
-        margin-top: 35%;
+        height: 48vh;
+        margin-top: 95%;
     }
 
     #id_password1 {
@@ -1058,12 +1145,13 @@ textarea.form-control {
     .login {
         width: 95%;
         margin-left: 2.5%;
-        height: 41vh;
+        height: 39vh;
+        margin-top: -410px;
     }
 
     /* logout page */
     #signout button {
-        margin-left: 3em;
+        margin-left: 0;
     }
 
     /* Menu page */
@@ -1081,7 +1169,8 @@ textarea.form-control {
     
     .column img {
         padding-left: 0;
-        padding-top: 111px;
+        padding-top: 94px;
+        padding-bottom: 15px;
         width: 400%;
     }
 
@@ -1177,8 +1266,12 @@ textarea.form-control {
     }
 
     .alert-control-register button {
-        margin-top: 0px;
+        margin-top: 14px;
     }
+}
+
+@media only screen and (min-width: 375px) {
+    
 }
 
 @media only screen and (min-width: 414px) and (max-width: 539px) {
@@ -1232,7 +1325,7 @@ textarea.form-control {
     
     /* Login page */
     .login-container {
-        height: 82vh;
+        height: 110vh;
         margin-top: 13%;
     }
 
@@ -1243,7 +1336,8 @@ textarea.form-control {
     .login {
         width: 95%;
         margin-left: 2.5%;
-        height: 41vh;
+        height: 30vh;
+        margin-top: -92px;
     }
 
     /* Menu page */

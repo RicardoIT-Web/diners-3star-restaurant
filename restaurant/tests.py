@@ -1,6 +1,12 @@
 '''
 The testcases TDD methodology
 '''
-# from django.test import TestCase
+from django.test import TestCase
+import unittest
 
-# Create your tests here.
+
+class TestExample(unittest.TestCase):
+    pass
+
+
+unittest.main()

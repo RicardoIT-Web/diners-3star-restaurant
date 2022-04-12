@@ -36,8 +36,8 @@ class Menu(View):
 class BookingList(TemplateView):
     template_name = 'user_booking.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
         context['bookings'] = self.request.user.booking_set.all()
         return context
 

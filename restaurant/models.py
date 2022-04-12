@@ -1,10 +1,10 @@
 '''
 The Restaurant app models required for adminand User functionality.
 '''
+import datetime
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
-from cloudinary.models import CloudinaryField
 
 
 STATUS = ((0, "Available"), (1, "Unavailable"))
@@ -37,7 +37,7 @@ class Booking(models.Model):
     group_size = models.PositiveIntegerField()
     date = models.DateField(blank=False)
     start_time = models.TimeField(auto_now_add=False, blank=False)
-    end_time = models.TimeField(auto_now_add=False, blank=False)
+    end_time = models.TimeField(auto_now_add=False, blank=True)
     comment = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=True)

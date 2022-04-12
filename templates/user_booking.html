@@ -3,14 +3,14 @@
 {% block content %}
 
     {% for booking in bookings %}
-    <div class="register-alert">
+    <div class="user-booking">
         <div class="alert-title" id="yourbooking">
             <p>{{ booking }}</p>
             <button class="userbooking-btn"><a href="{% url 'booking_amend' pk=booking.pk %}">Update</a></button>
             <button class="userbooking-btn"><a href="{% url 'booking_delete' pk=booking.pk %}">delete</a></button>
         </div>
-        <div class="logout-card-img">
-            <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1649275521/pexels-solodsha-9009955_amstte.jpg" alt="Breakfast outside">
+        <div class="logout-card-img-user">
+            <img src="https://res.cloudinary.com/rick-it-dev/image/upload/v1649699639/user_booking_img_q31hc6.jpg" alt="cheers">
         </div>
       </div>
     {% endfor %}
