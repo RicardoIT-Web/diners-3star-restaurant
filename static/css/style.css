@@ -796,6 +796,22 @@ textarea.form-control {
     .bookingpg-img {
         height: 165vh;
     }
+
+    /* User Booking List */
+    .user_booking_cards {
+        margin-bottom: -83px;
+    }
+    .user-booking {
+        margin-top: 7em;
+        margin-bottom: 2em;
+        height: 171px;
+        width: 295px;
+    }
+
+    #yourbooking {
+        padding: 10px;
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 374px)  {
@@ -1270,8 +1286,42 @@ textarea.form-control {
     }
 }
 
-@media only screen and (min-width: 375px) {
-    
+@media only screen and (min-width: 390px) and (max-width: 413px) {
+    /* home page */
+    .img-fluid {
+        height: 40vh;
+        margin-top: 60%;
+    }
+
+    /*login page */
+    .login {
+        height: 32vh;
+        margin-top: -430px;
+    }
+
+    .login-container {
+        margin-top: 99%;
+    }
+
+    /* menu */
+    .column img {
+        padding-left: 0;
+        padding-top: 133px;
+        padding-bottom: 133px;
+        width: 400%;
+        margin-top: 38px;
+    }    
+
+    /* Booking alert-card */
+    .reg-card-img button {
+        margin-top: 22px;
+    }
+
+    /* Double booking alert message */
+    .alert-control-register button {
+        margin-top: 14px;
+    }
+
 }
 
 @media only screen and (min-width: 414px) and (max-width: 539px) {
