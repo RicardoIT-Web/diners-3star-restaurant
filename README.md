@@ -37,7 +37,6 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 [Testing](#testing)
 + [Lighthouse Testing](#lighthouse-testing)
 + [Manual Testing](#manual-testing)
-+ [Automated Testing](#automated-testing)
 
 [Bugs During Development](#bugs-during-development)
 + [](#)
@@ -255,9 +254,23 @@ The social media account links allow the Users to find out more about what other
 
 ### Lighthouse Validation
 
-### Manual Testing
+## Manual Testing
 
-### Automated Testing
+User Story [#1](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/1)
+
+Can the administrator Log in?
+
+A superuser was created with the built in tools from Django. This allows the administrator to login using their selected credentials. Test passed.
+
+![Admin Login Test](/media/images/admin_login_test.jpg)
+
+User Story [#2](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/2)
+
+Can the administrator approve and / or reject a User booking?
+
+Once the administrator is logged in, they can view the list of bookings. 
+
+
 
 
 # Bugs During Development

@@ -250,20 +250,20 @@ button.btn-clear {
 
 .column.left {
     opacity: 0.5;
-    margin-left: 30px;
+    margin-left: 3px;
 }
 
 .column.center {
-    margin-left: 100px;
+    margin-left: 78px;
 }
 
 .column.right {
     opacity: 0.5;
-    margin-left: 204px;
+    margin-left: 160px;
 }
 
 .right img {
-    width: 550px;
+    width: 437px;
 }
 
 /* contacts page */
@@ -450,6 +450,8 @@ div .gmap_canvas {
     color: white;
 }
 
+/* authenticated user booking page */
+
 .bookingpg-img {
     background-image: url("https://res.cloudinary.com/rick-it-dev/image/upload/v1648136151/beachbreakfast6_aqprxa.jpg");
     background-position: center;
@@ -550,16 +552,19 @@ textarea.form-control {
 
 .logout-card-img-user img {
     height: 100%;
-    width: 90%;
-    margin-left: 30px;
+    width: 98%;
+    margin-left: 17px
 }
-
-
 
 @media only screen and (min-width: 320px) and (max-width: 359px) {
     /* home page Not Authenticated User*/
     .navbar-brand {
         margin-left: 0px;
+        font-size: 15px;
+    }
+
+    .container-fluid {
+        width: 98%;
     }
 
     .navbar ul {
@@ -799,7 +804,8 @@ textarea.form-control {
 
     /* User Booking List */
     .user_booking_cards {
-        margin-bottom: -83px;
+        padding-bottom: 235px;
+        margin-bottom: -366px;
     }
     .user-booking {
         margin-top: 7em;
@@ -809,8 +815,14 @@ textarea.form-control {
     }
 
     #yourbooking {
-        padding: 10px;
-        width: 50%;
+        padding: 5px;
+        width: 45%;
+    }
+
+    /* logout page */
+    .alert-title button {
+        margin-left: 0;
+        margin-top: 0;
     }
 }
 
@@ -1027,6 +1039,27 @@ textarea.form-control {
 
     .bookingpg-img {
         height: 140vh;
+    }
+
+    /* User Bookings Page */
+    .user_booking_cards {
+        padding-top: 117px;
+        padding-bottom: 150px;
+        margin-bottom: -232px;
+    }
+
+    .user-booking {
+        width: 349px;
+        margin: 5px;
+    }
+
+    #yourbooking {
+        width: 50%;
+        padding: 26px;
+    }
+
+    .logout-card-img-user img {
+        margin-left: 8px;
     }
 }
 
@@ -1284,9 +1317,30 @@ textarea.form-control {
     .alert-control-register button {
         margin-top: 14px;
     }
+
+    /* User Bookings Page */
+    .user_booking_cards {
+        padding-top: 117px;
+        padding-bottom: 150px;
+        margin-bottom: -232px;
+    }
+
+    .user-booking {
+        width: 354px;
+        margin: 10px;
+    }
+
+    #yourbooking {
+        width: 50%;
+        padding: 26px;
+    }
+
+    .logout-card-img-user img {
+        margin-left: 8px;
+    }
 }
 
-@media only screen and (min-width: 390px) and (max-width: 413px) {
+@media only screen and (min-width: 390px) and (max-width: 411px) {
     /* home page */
     .img-fluid {
         height: 40vh;
@@ -1322,12 +1376,33 @@ textarea.form-control {
         margin-top: 14px;
     }
 
+    /* User Bookings Page */
+    .user_booking_cards {
+        padding-top: 117px;
+        padding-bottom: 150px;
+        margin-bottom: -232px;
+    }
+
+    .user-booking {
+        width: 370px;
+        margin: 10px;
+    }
+
+    #yourbooking {
+        width: 50%;
+        padding: 26px;
+    }
+
+    .logout-card-img-user img {
+        margin-left: 8px;
+    }
+
 }
 
-@media only screen and (min-width: 414px) and (max-width: 539px) {
+@media only screen and (min-width: 412px) and (max-width: 539px) {
     /* home page */
     .navbar-brand {
-        margin-left: 90px;
+        margin-left: 4px;
     }
 
     ul {
@@ -1335,11 +1410,12 @@ textarea.form-control {
     }
 
     .navbar ul {
-        margin-left: 27px;
+        margin-left: -43px;
     }
 
     .offcanvas-body {
         padding-bottom: 77px;
+        padding-left: 67px;
     }
 
     .offcanvas.show {
@@ -1349,8 +1425,8 @@ textarea.form-control {
 
     .img-fluid {
         width: 100%;
-        height: 70vh;
-        padding-top: 217px;
+        height: 62vh;
+        padding-top: 173px;
     }
 
     /* register page*/
@@ -1405,7 +1481,8 @@ textarea.form-control {
     
     .column img {
         padding-left: 0;
-        padding-top: 94px;
+        padding-top: 150px;
+        padding-bottom: 100px;
         width: 400%;
     }
 
@@ -1465,6 +1542,7 @@ textarea.form-control {
         font-size: 13px;
         font-weight: bolder;
         margin-top: 14px;
+        margin-left: 0;
     }
 
     .alternatively h2 {
@@ -1507,6 +1585,27 @@ textarea.form-control {
 
     .bookingpg-img {
         height: 128vh;
+    }
+
+    /* User Bookings Page */
+    .user_booking_cards {
+        padding-top: 137px;
+        padding-bottom: 104px;
+        margin-bottom: -232px;
+    }
+
+    .user-booking {
+        width: 382px;
+        margin: 15px;
+    }
+
+    #yourbooking {
+        width: 50%;
+        padding: 26px;
+    }
+
+    .logout-card-img-user img {
+        margin-left: 8px;
     }
 }
 
@@ -1664,6 +1763,7 @@ textarea.form-control {
         font-size: 13px;
         font-weight: bolder;
         margin-top: 14px;
+        margin-left: 0;
     }
 
     .alternatively h2 {
@@ -1706,6 +1806,24 @@ textarea.form-control {
     .bookingpg-img {
         height: 128vh;
     }
+
+    /* User Bookings list */
+    .user_booking_cards {
+        padding-bottom: 235px;
+        margin-bottom: -340px;
+    }
+    .user-booking {
+        margin-top: 7em;
+        margin-bottom: 2em;
+        height: 153px;
+        width: 409px;
+    }
+
+    #yourbooking {
+        padding: 5px;
+        width: 50%;
+    }
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1715,7 +1833,7 @@ textarea.form-control {
     }
 
     ul {
-        padding-right: 11rem;
+        padding-right: 134px;
     }
 
     .img-fluid {
@@ -1820,7 +1938,7 @@ textarea.form-control {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
     /* register page*/
     .card-container {
         margin-top: 80px;
@@ -1914,5 +2032,29 @@ textarea.form-control {
     .alternatively button {
         margin-top: 74px;
     }
+}
 
+@media only screen and (min-width: 1280px) and (max-width: 1200px) {
+    /* Menu page */
+    .column.left {
+        margin-left: -24px;
+    }
+
+    .column.center {
+        margin-left: 61px;
+    }
+
+    .column.right{
+        margin-left: 119px;
+    }
+
+    .right img {
+        width: 340px;
+    }
+
+    .column img {
+        padding-top: 54px;
+        padding-left: 0px;
+        width: 420px;
+    }
 }
