@@ -1,6 +1,6 @@
 # Diners 3Star Restaurant
 
-<!-- [![responsive](***)](https://diners-3star-restaurant.herokuapp.com/) -->
+![responsive](***)](https://diners-3star-restaurant.herokuapp.com/)
 
 Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed site.  
 
@@ -56,7 +56,7 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 
 ## Purpose
 ----
-This project was developed to satisfy my fourth Milestone Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to prebook meals with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each table and 2 hall tables each sitting a maximum of 6 people on each table.
+This project was developed to satisfy my fourth Milestone Project for the full stack development program with [Code Institute](https://www.codeinstitute.net). For this project I have decided to create an imaginary beautiful 3star Michelin restaurant serving customers staying at the nearby beach Hotel. The restaurant allows customers to book tables with the added feature of allowing customers to select between three locations within the restaurant, these being outside, window seat or in the main hall areas. This current release will be restricted to a maximum of 2 tables outside sitting 2 people on each table. 2 window tables each sitting a maximum of 4 people on each table and 2 hall tables each sitting a maximum of 6 people on each table.
 
 The restaurant prides itself in providing their customers with a more inclusive experience by allowing customers to visit the kitchen area, speak to the chef and their team and be able to have a little taste of any Menu meal before ordering.
 
@@ -77,7 +77,7 @@ The project was developed from initial wireframes and some modifications were ma
 
 
 #### The Home page
-Where some sites demontrate some django functionality on the landing page ie. the home page, for this project, the landing page shows the basic features one would expect to see for a restaurant site. The User is greeted with a main hero image, together with a Navbar and footer to guide the user to other features of the site, which covers some of the User Stories listed below.
+Where some sites demonstrate some django functionality on the landing page ie. the home page, for this project, the landing page shows the basic features one would expect to see for a restaurant site. The User is greeted with a main hero image, together with a Navbar, offcanvas navbar and footer to guide the user to other features of the site, which covers some of the User Stories listed below.
 
 ![Home page](/media/wireframes/homepage_wf.jpg)
 
@@ -141,7 +141,7 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
 # Backend Features
 
-This project is built using Django, adopting the MVT (Models-Views-Templates) methodology. The restaurant app which contains the MVT architechture to make this site interactive has three main models:
+This project is built using Django, adopting the MVT (Models-Views-Templates) architecture. The restaurant app which contains the MVT architechture to make this site interactive has three main models:
 
 ### The Table Model
 
@@ -164,7 +164,7 @@ Employing all CRUD features - The administrator can Create, Read, Update and Del
 
 ### The Contact Model
 
-The contact model allows the User to fill in a form and raise any queries. The Admin might receive a call and can use this form to keep a record of any queries riased. The data is "posted" to the PostgreSQL tabale. This in turn allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions. The admin view comes with an added feature of "Actioned" status to allow the restaurant to track opened and closed enquiries.
+The contact model allows the User to fill in a form and raise any queries. The Admin might receive a call and can use this form to keep a record of any queries riased. The data is "posted" to the PostgreSQL table. This in turn allows that data to be accessed by the administrator to act and respond to the User regarding any queries or suggestions. The admin view comes with an added feature of "Actioned" status to allow the restaurant to track opened and closed enquiries.
 
 #### Admin view
 
@@ -246,13 +246,27 @@ The social media account links allow the Users to find out more about what other
 
 ### HTML Validation
 
+I have gone through all of the HTML files and copied them directly into HTML validator.
+
+There are no errors identified in any html files.
+
 ### CSS Validation
 
+I have copied and pasted the entire CSS sheet into the CSS validator with a result of no errors reported.
+
 ### Python Validation
+
+I have copied and pasted all the .py files into the python validator with a result of no errors reported.
+
+### JavaScrit Validation
+
+I have copied and pasted the javascript file into the jhint validator with a result of no errors reported.
 
 # Testing
 
 ### Lighthouse Validation
+
+The lighthouse assessment returned back an accesibility result of 91%. Unfortunately the performance level is very low.
 
 ## Manual Testing
 
@@ -268,10 +282,59 @@ User Story [#2](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/
 
 Can the administrator approve and / or reject a User booking?
 
-Once the administrator is logged in, they can view the list of bookings. 
+Once the administrator is logged in, they can view the list of existing bookings.
 
+User Story [#3](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/3)
 
+Can the admin view the Users contact details?
 
+The contact form allows the User to fill in thier name and prefered contact. This detail is saved and send to the admin view where they are able to view the required details to respond to User.
+
+User Story [#4](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/4)
+
+Can the admin and the User view the menu?
+
+For this first release, both the admin and the User can view the menu which is a fixed menu, by clicking on the menu link on the website.
+
+User Story [#5](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/5)
+
+Similar to User Story 4 both admin and User can now access the menu without being logged in.
+
+User Story [#6](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/6)
+
+Can the User view Restaurant Contacts?
+
+The contacts page allows the user to fill in a form to reach out for any queries or suggestions. This page also contains the restaurant contact details and a map to localise the restaurants position.
+
+User Story [#7](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/7)
+
+Is there a registration feature?
+
+The navbar include a link which will direct the user to the registration page.
+
+User Story [#8](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/8)
+
+Can the User Register?
+
+The Registration page allows the user to introduce their deitails and other essential credentials allowing the user to register on the website.
+
+User Story [#9](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/9)
+
+Is there a login page?
+
+The navbar include a link which will direct the user to the login page. The user can insert their credetials and click login. The user is then directed to the home page.
+
+User Story [#10](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/10)
+
+Can the User and admin make a reservation?
+
+The booking model was created for this feature. If the User and the admin is logged in, they will be able to make a reservation. the admin can either use the frontend option or log in to the admin environment and make the reservation from that location also.
+
+User Story [#10](https://github.com/RicardoIT-Web/diners-3star-restaurant/issues/10)
+
+Can the admin make changes to the table arrangements?
+
+The table model was created for this functionality. The admin can access the admin environment and make changes to the table layout as required.
 
 # Bugs During Development
 
@@ -295,7 +358,7 @@ To fix this with the support of the tutors at CI I went through the following st
 
 ![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles5.jpg)
 
-* Once I selected Y the problem was fixed and the static files were now being copied to Heroku
+* Once I selected Y the problem was fixed and the static files were now being copied to Heroku.
 
 
 # Deployment
@@ -414,7 +477,6 @@ To fix this with the support of the tutors at CI I went through the following st
 ### Online Resources
 
 * CI Blog Walkthrough Project
-* CI Tutoring Team
 * Bootstrap
 * Heroku
 * Stackoverflow
@@ -430,3 +492,4 @@ To fix this with the support of the tutors at CI I went through the following st
 * Matt Bodden
 * DarshanDev
 * Rohit Sharma
+* CI Tutoring Team

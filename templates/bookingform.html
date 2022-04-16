@@ -8,10 +8,10 @@
         <h1>Oh No!!</h1>
         <p class="alert-text">We're so sorry but you need to be logged in if you wish to make a reservation</p>
         <div class="alert-control-register">
-            <a href="{% url 'account_signup' %}"><button>Register</button></a>
+            <button><a href="{% url 'account_signup' %}">Register</a></button>
         </div>
         <div class="alert-control-login">
-            <a href="{% url 'account_login' %}"><button>Login</button></a>
+            <button><a href="{% url 'account_login' %}">Login</a></button>
         </div>
     </div>
     <div class="reg-card-img">
@@ -19,7 +19,7 @@
         <div class="alternatively">
             <h2>Alternatively</h2>
             <p>You can simply fill out a contact form providing us with your request and we can make the reservation on your behalf</p>
-            <a href="{% url 'contacts' %}"><button>Contact Us</button></a> 
+            <button><a href="{% url 'contacts' %}">Contact Us</a></button>
         </div>
     </div>
 </div>
