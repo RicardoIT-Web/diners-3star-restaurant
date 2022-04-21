@@ -343,8 +343,8 @@ To fix this with the support of the tutors at CI I went through the following st
 ![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles.jpg)
 
 * Enter your email
-    * For the password, go into your cloudinary profile and copy the API key
-    * paste API key in terminal password
+    * For the password, go into your Heroku profile and copy the API key
+    * paste API key in terminal as your password.
 
 ![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles3.jpg)
 
@@ -354,7 +354,7 @@ To fix this with the support of the tutors at CI I went through the following st
 
 ![Access Heroku - terminal](/media/images/dugs_heroku_staticfiles5.jpg)
 
-* Once I selected Y the problem was fixed and the static files were now being copied to Heroku.
+* Once I selected Y the problem was fixed and the static files were now being loaded to Heroku.
 
 
 # Deployment
