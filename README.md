@@ -1,7 +1,5 @@
 # Diners 3Star Restaurant
 
-![responsive](***)](https://diners-3star-restaurant.herokuapp.com/)
-
 Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed site.  
 
 # Contents
@@ -39,12 +37,10 @@ Click [here](https://diners-3star-restaurant.herokuapp.com/) to view deployed si
 + [Manual Testing](#manual-testing)
 
 [Bugs During Development](#bugs-during-development)
-+ [](#)
-+ [](#)
-+ [](#)
 
 [Deployment](#deployment)
-+ [](#)
++ [Heroku](#Heroku)
++ [Installing Project Requirements](#installing-project-requirements)
 
 [Acknowledgements](#acknowledgements)
 + [Online Resources](#online-resources)
