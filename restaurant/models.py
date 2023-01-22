@@ -1,5 +1,5 @@
 '''
-The Restaurant app models required for adminand User functionality.
+The Restaurant app models required for admin and User functionality.
 '''
 import datetime
 from django.db import models
